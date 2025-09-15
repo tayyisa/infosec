@@ -1,0 +1,4 @@
+[2025-09-16T02:47:54.574309] training_card name_hint=n*** card_masked=*********0123 pan_hmac=4d497cadbe2f258761455bb3978b82579b056e8689879537b1bcb7d7a632c0ae
+[2025-09-16T02:52:10.828833] training_card name_hint=n*** card_masked=*********0123
+[2025-09-16T02:54:46.035369] training_card name=name surname number=12345678901234 expiry=12/33 cvv=111
+[2025-09-16T03:05:04.812448] training_card name=name surname2 number=1111111111111 expiry=22/33 cvv=444
