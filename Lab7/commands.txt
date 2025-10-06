@@ -1,0 +1,22 @@
+tayyisa@MacBook-Air-asiyat Lab7 % touch file.txt
+
+tayyisa@MacBook-Air-asiyat Lab7 % nano write_line.sh
+
+tayyisa@MacBook-Air-asiyat Lab7 % chmod +x write_line.sh 
+
+tayyisa@MacBook-Air-asiyat Lab7 % export VISUAL=nano
+export EDITOR=nano
+
+tayyisa@MacBook-Air-asiyat Lab7 % crontab -e
+
+crontab: no crontab for tayyisa - using an empty one
+crontab: installing new crontab
+tayyisa@MacBook-Air-asiyat Lab7 % crontab -l
+
+* * * * * /Users/tayyisa/auca/InfoSec/Lab7/write_line.sh
+
+tayyisa@MacBook-Air-asiyat Lab7 % cat file.txt      
+New line at Tue Oct  7 03:28:01 +06 2025
+tayyisa@MacBook-Air-asiyat Lab7 % cat file.txt
+New line at Tue Oct  7 03:28:01 +06 2025
+

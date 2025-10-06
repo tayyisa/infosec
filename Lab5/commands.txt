@@ -1,0 +1,194 @@
+tayyisa@MacBook-Air-asiyat ~ % dscl . list /Users
+_accessoryupdater
+_amavisd
+_analyticsd
+_aonsensed
+_appinstalld
+_appleevents
+_applepay
+_appowner
+_appserver
+_appstore
+_ard
+_assetcache
+_astris
+_atsserver
+_audiomxd
+_avbdeviced
+_avphidbridge
+_backgroundassets
+_BGMXPCHelper
+_biome
+_calendar
+_captiveagent
+_ces
+_clamav
+_cmiodalassistants
+_coreaudiod
+_coremediaiod
+_coreml
+_corespeechd
+_ctkd
+_cvmsroot
+_cvs
+_cyrus
+_darwindaemon
+_datadetectors
+_demod
+_devdocs
+_devicemgr
+_diagnosticservicesd
+_diskimagesiod
+_displaypolicyd
+_distnote
+_dovecot
+_dovenull
+_dpaudio
+_driverkit
+_eligibilityd
+_eppc
+_findmydevice
+_fpsd
+_ftp
+_gamecontrollerd
+_geod
+_hidd
+_iconservices
+_installassistant
+_installcoordinationd
+_installer
+_jabber
+_kadmin_admin
+_kadmin_changepw
+_knowledgegraphd
+_krb_anonymous
+_krb_changepw
+_krb_kadmin
+_krb_kerberos
+_krb_krbtgt
+_krbfast
+_krbtgt
+_launchservicesd
+_lda
+_locationd
+_logd
+_lp
+_mailman
+_mbsetupuser
+_mcxalr
+_mdatp
+_mdnsresponder
+_mmaintenanced
+_mobileasset
+_mobilegestalthelper
+_modelmanagerd
+_mysql
+_naturallanguaged
+_nearbyd
+_netbios
+_netstatistics
+_networkd
+_neuralengine
+_notification_proxy
+_nsurlsessiond
+_oahd
+_ondemand
+_postfix
+_postgres
+_qtss
+_reportmemoryexception
+_reportsystemmemory
+_rmd
+_sandbox
+_screensaver
+_scsd
+_securityagent
+_sntpd
+_softwareupdate
+_spotlight
+_sshd
+_svn
+_swtransparencyd
+_systemstatusd
+_taskgated
+_teamsserver
+_terminusd
+_timed
+_timezone
+_tokend
+_trustd
+_trustevaluationagent
+_unknown
+_update_sharing
+_usbmuxd
+_uucp
+_warmd
+_webauthserver
+_windowserver
+_www
+_wwwproxy
+_xserverdocs
+daemon
+nobody
+root
+tayyisa
+tayyisa@MacBook-Air-asiyat ~ % sudo dscl . -create /Users/user1
+Password:
+tayyisa@MacBook-Air-asiyat ~ % sudo dscl . -create /Users/user1 UserShell /bin/bash
+tayyisa@MacBook-Air-asiyat ~ % sudo dscl . -create /Users/user1 RealName "User One"
+tayyisa@MacBook-Air-asiyat ~ % sudo dscl . -create /Users/user1 UniqueID 510
+tayyisa@MacBook-Air-asiyat ~ % sudo dscl . -create /Users/user1 PrimaryGroupID 20
+tayyisa@MacBook-Air-asiyat ~ % sudo dscl . -create /Users/user1 NFSHomeDirectory /Users/user1
+tayyisa@MacBook-Air-asiyat ~ % sudo dscl . -passwd /Users/user1 12345
+tayyisa@MacBook-Air-asiyat ~ % sudo createhomedir -c -u user1 > /dev/null
+tayyisa@MacBook-Air-asiyat ~ % dscl . read /Users/user1
+dsAttrTypeNative:_writers_passwd: user1
+dsAttrTypeNative:accountPolicyData:
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>creationTime</key>
+	<real>1759783416.7288351</real>
+	<key>failedLoginCount</key>
+	<integer>0</integer>
+	<key>failedLoginTimestamp</key>
+	<integer>0</integer>
+	<key>passwordLastSetTime</key>
+	<real>1759783448.582787</real>
+</dict>
+</plist>
+
+dsAttrTypeNative:record_daemon_version: 9054000
+AppleMetaNodeLocation: /Local/Default
+GeneratedUID: 64306AAA-4022-4472-AC39-E35E0181479E
+NFSHomeDirectory: /Users/user1
+Password: ********
+PrimaryGroupID: 20
+RealName:
+ User One
+RecordName: user1
+RecordType: dsRecTypeStandard:Users
+UniqueID: 510
+UserShell: /bin/bash
+tayyisa@MacBook-Air-asiyat ~ % sudo su - user1
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+MacBook-Air-asiyat:~ user1$ whoami
+user1
+MacBook-Air-asiyat:~ user1$ exit
+logout
+tayyisa@MacBook-Air-asiyat ~ % sudo dscl . -create /Groups/mygroup
+tayyisa@MacBook-Air-asiyat ~ % sudo dscl . -append /Groups/mygroup GroupMembership user1
+tayyisa@MacBook-Air-asiyat ~ % dscl . read /Groups/mygroup
+dsAttrTypeNative:record_daemon_version: 9054000
+AppleMetaNodeLocation: /Local/Default
+GeneratedUID: 609DC2FF-8F03-4314-BD4C-1033D1008AE6
+GroupMembership: user1 user1
+RecordName: mygroup
+RecordType: dsRecTypeStandard:Groups
+tayyisa@MacBook-Air-asiyat ~ % sudo pkill -KILL -u user1
+tayyisa@MacBook-Air-asiyat ~ % sudo dscl . -delete /Users/user1
+tayyisa@MacBook-Air-asiyat ~ % sudo rm -rf /Users/user1

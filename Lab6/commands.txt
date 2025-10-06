@@ -1,0 +1,22 @@
+tayyisa@MacBook-Air-asiyat Lab6 % touch file.txt
+
+tayyisa@MacBook-Air-asiyat Lab6 % ls -la
+total 0
+drwxr-xr-x   3 tayyisa  staff   96 Oct  7 02:48 .
+drwxr-xr-x  12 tayyisa  staff  384 Oct  7 02:48 ..
+-rw-r--r--   1 tayyisa  staff    0 Oct  7 02:48 file.txt
+tayyisa@MacBook-Air-asiyat Lab6 % sudo chown root file.txt
+tayyisa@MacBook-Air-asiyat Lab6 % ls -la
+total 0
+drwxr-xr-x   3 tayyisa  staff   96 Oct  7 02:48 .
+drwxr-xr-x  12 tayyisa  staff  384 Oct  7 02:48 ..
+-rw-r--r--   1 root     staff    0 Oct  7 02:48 file.txt
+tayyisa@MacBook-Air-asiyat Lab6 % id tayyisa
+uid=501(tayyisa) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae),701(com.apple.sharepoint.group.1)
+tayyisa@MacBook-Air-asiyat Lab6 % sudo chgrp everyone file.txt
+tayyisa@MacBook-Air-asiyat Lab6 % ls -la                      
+total 0
+drwxr-xr-x   3 tayyisa  staff      96 Oct  7 02:48 .
+drwxr-xr-x  12 tayyisa  staff     384 Oct  7 02:48 ..
+-rw-r--r--   1 root     everyone    0 Oct  7 02:48 file.txt
+

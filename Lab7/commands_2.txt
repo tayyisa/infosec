@@ -1,0 +1,15 @@
+tayyisa@MacBook-Air-asiyat Lab7 % nano send_email.py    
+
+tayyisa@MacBook-Air-asiyat Lab7 % chmod +x send_email.py
+
+tayyisa@MacBook-Air-asiyat Lab7 % crontab -e
+
+crontab: installing new crontab
+tayyisa@MacBook-Air-asiyat Lab7 % ls
+commands.txt	email_log.txt	file.txt	send_email.py	write_line.sh
+
+tayyisa@MacBook-Air-asiyat Lab7 % cat email_log.txt
+Script run at 2025-10-07 03:41:01.331496
+Email sent successfully at 2025-10-07 03:41:03.723078
+Script run at 2025-10-07 03:42:00.996399
+Email sent successfully at 2025-10-07 03:42:05.029982
