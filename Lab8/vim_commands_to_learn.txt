@@ -1,0 +1,25 @@
+# Lab8 Vim 
+
+i : go into insert mode & type stuff  
+ESC : back to normal mode for commands  
+DD : delete current line  
+:%d : delete all text  
+:w : save file  
+:q : quit  
+:wq : save & quit  
+
+Nav without arrows:  
+w : jump to next word  
+e : jump to end of word  
+b : jump to start of word  
+0 : go to start of line  
+$ : go to end of line  
+gg : first line  
+G : last line  
+
+Copy/cut/paste:  
+yy : copy current line  
+p : paste after  
+P : paste before  
+u : undo last change  
+Ctrl+r : redo  
