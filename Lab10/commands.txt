@@ -1,3 +1,5 @@
+//nginx
+
 tayyisa@MacBook-Air-asiyat InfoSec % mkdir Lab10
 tayyisa@MacBook-Air-asiyat InfoSec % cd Lab10
 tayyisa@MacBook-Air-asiyat Lab10 % nginx -v
@@ -11,4 +13,53 @@ nginx: the configuration file /Users/tayyisa/auca/InfoSec/Lab10/nginx.conf synta
 nginx: configuration file /Users/tayyisa/auca/InfoSec/Lab10/nginx.conf test is successful
 
 tayyisa@MacBook-Air-asiyat Lab10 % nginx -c /Users/tayyisa/auca/InfoSec/Lab10/nginx.conf
+
+
+
+
+
+
+//task:explore Nginx proxy_pass parameter to allow sending requests to your running API
+
+
+
+tayyisa@MacBook-Air-asiyat Lab10 % python3 -m venv venv
+tayyisa@MacBook-Air-asiyat Lab10 % source venv/bin/activate
+
+(venv) tayyisa@MacBook-Air-asiyat Lab10 % pip install flask
+
+(venv) tayyisa@MacBook-Air-asiyat Lab10 % nano api.py
+
+(venv) tayyisa@MacBook-Air-asiyat Lab10 % python api.py
+
+ * Serving Flask app 'api'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+
+
+
+
+
+
+//in another tab checking the results
+
+
+tayyisa@MacBook-Air-asiyat Lab10 % nginx -s stop
+
+tayyisa@MacBook-Air-asiyat Lab10 % nginx -c /Users/tayyisa/auca/InfoSec/Lab10/nginx.conf
+
+tayyisa@MacBook-Air-asiyat Lab10 % curl http://localhost:8000
+
+<meta charset="UTF-8">
+<div style="font-family:sans-serif; text-align:center; margin-top:50px;">
+  ✨ My site on port 8000 ✨
+</div>
+
+tayyisa@MacBook-Air-asiyat Lab10 % curl http://localhost:8000/api
+
+{"message":"Hello from Flask API"}
+tayyisa@MacBook-Air-asiyat Lab10 % 
+
 
