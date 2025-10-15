@@ -1,0 +1,112 @@
+tayyisa@MacBook-Air-asiyat InfoSec % cd Lab4_Additional 
+tayyisa@MacBook-Air-asiyat Lab4_Additional % mkdir phishing
+tayyisa@MacBook-Air-asiyat Lab4_Additional % cd phishing 
+tayyisa@MacBook-Air-asiyat phishing % nano server.py
+tayyisa@MacBook-Air-asiyat phishing % nano send_email.py
+tayyisa@MacBook-Air-asiyat phishing % vim index.html
+tayyisa@MacBook-Air-asiyat phishing % python -m venv venv
+
+zsh: command not found: python
+tayyisa@MacBook-Air-asiyat phishing % python3 -m venv venv
+tayyisa@MacBook-Air-asiyat phishing % source venv/bin/activate
+
+(venv) tayyisa@MacBook-Air-asiyat phishing % pip install Flask flask-cors
+
+Collecting Flask
+  Using cached flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting flask-cors
+  Using cached flask_cors-6.0.1-py3-none-any.whl.metadata (5.3 kB)
+Collecting blinker>=1.9.0 (from Flask)
+  Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from Flask)
+  Using cached click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from Flask)
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from Flask)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from Flask)
+  Downloading markupsafe-3.0.3-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.7 kB)
+Collecting werkzeug>=3.1.0 (from Flask)
+  Using cached werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Using cached flask-3.1.2-py3-none-any.whl (103 kB)
+Using cached flask_cors-6.0.1-py3-none-any.whl (13 kB)
+Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Using cached click-8.3.0-py3-none-any.whl (107 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading markupsafe-3.0.3-cp313-cp313-macosx_11_0_arm64.whl (12 kB)
+Using cached werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Installing collected packages: markupsafe, itsdangerous, click, blinker, werkzeug, jinja2, Flask, flask-cors
+Successfully installed Flask-3.1.2 blinker-1.9.0 click-8.3.0 flask-cors-6.0.1 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.3 werkzeug-3.1.3
+(venv) tayyisa@MacBook-Air-asiyat phishing % python3 -m smtpd -n -c DebuggingServer localhost:1025
+
+/Users/tayyisa/auca/InfoSec/Lab4_Additional/phishing/venv/bin/python3: No module named smtpd
+(venv) tayyisa@MacBook-Air-asiyat phishing % pip install aiosmtpd
+
+Collecting aiosmtpd
+  Downloading aiosmtpd-1.4.6-py3-none-any.whl.metadata (6.6 kB)
+Collecting atpublic (from aiosmtpd)
+  Downloading atpublic-6.0.2-py3-none-any.whl.metadata (2.0 kB)
+Collecting attrs (from aiosmtpd)
+  Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Downloading aiosmtpd-1.4.6-py3-none-any.whl (154 kB)
+Downloading atpublic-6.0.2-py3-none-any.whl (6.4 kB)
+Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+Installing collected packages: attrs, atpublic, aiosmtpd
+Successfully installed aiosmtpd-1.4.6 atpublic-6.0.2 attrs-25.4.0
+(venv) tayyisa@MacBook-Air-asiyat phishing % python3 -m aiosmtpd -n -l localhost:1025
+
+---------- MESSAGE FOLLOWS ----------
+Content-Type: multipart/mixed; boundary="===============2839552458433679730=="
+MIME-Version: 1.0
+From: no-reply@bank-local.test
+To: student@example.local
+Subject: Card Verification Required
+X-Peer: ('127.0.0.1', 61406)
+
+--===============2839552458433679730==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+CjwhRE9DVFlQRSBodG1sPgo8aHRtbCBsYW5nPSJlbiI+CjxoZWFkPgogICA8bWV0YSBjaGFyc2V0
+PSJVVEYtOCI+CiAgIDx0aXRsZT5DYXJkIFZlcmlmaWNhdGlvbjwvdGl0bGU+CjwvaGVhZD4KPGJv
+ZHk+CiAgIDxwPldlIG5lZWQgdG8gY29uZmlybSB5b3VyIGNhcmQgZGV0YWlscyBmb3Igc2VjdXJp
+dHkgcmVhc29ucy48L3A+CiAgIDxwPlBsZWFzZSBmb2xsb3cgdGhlIGxpbmsgYmVsb3cgdG8gcHJv
+Y2VlZDo8L3A+CiAgIDxwPjxhIGhyZWY9Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC8iPlZlcmlmeSB5
+b3VyIGNhcmQ8L2E+PC9wPgogICA8cD5JZiB5b3UgZGlkbuKAmXQgcmVxdWVzdCB0aGlzLCBwbGVh
+c2UgaWdub3JlIHRoaXMgbWVzc2FnZS48L3A+CjwvYm9keT4KPC9odG1sPgo=
+
+--===============2839552458433679730==--
+------------ END MESSAGE ------------
+
+
+
+
+
+//commands from the different tab in terminal
+
+tayyisa@MacBook-Air-asiyat phishing % python3 -m venv venv                                 
+tayyisa@MacBook-Air-asiyat phishing % source venv/bin/activate
+(venv) tayyisa@MacBook-Air-asiyat phishing % python send_email.py      
+
+Message delivered to local SMTP debug server (check its console).
+(venv) tayyisa@MacBook-Air-asiyat phishing % python send_email.py
+
+Message delivered to local SMTP debug server (check its console).
+(venv) tayyisa@MacBook-Air-asiyat phishing % vim server.py    
+(venv) tayyisa@MacBook-Air-asiyat phishing % python3 server.py
+
+ * Serving Flask app 'server'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 215-289-887
+127.0.0.1 - - [15/Oct/2025 23:13:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2025 23:16:12] "OPTIONS /submit_card HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2025 23:16:12] "POST /submit_card HTTP/1.1" 200 -
+
+

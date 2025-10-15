@@ -1,0 +1,1 @@
+[2025-10-15T23:16:12.711434] training_card name=name surname number=123456789 expiry=12/12 cvv=678
