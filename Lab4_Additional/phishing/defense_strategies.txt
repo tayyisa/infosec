@@ -1,0 +1,9 @@
+Defense Strategies Against Phishing
+	1	First, companies should use email authentication like SPF, DKIM and DMARC. These settings help verify that the email really comes from the right address and not from a fake one.
+	2	Second, it is important to have a secure email gateway or good filters. They scan all incoming letters, check links and attachments, and block suspicious emails before users even open them.
+	3	Third, every account should have multi-factor authentication (MFA). This means that even if someone steals a password, they still cannot log in without the second factor, such as a phone code.
+	4	Fourth, DNS or web filtering should be used. It blocks access to dangerous or unknown websites so users do not accidentally open phishing pages.
+	5	Fifth, employees must get regular training. People should learn how to recognize fake messages, suspicious links and how to report them.
+	6	Sixth, there should be a simple way to report phishing. For example, a “Report Phish” button in the email program helps the security team react quickly.
+	7	Finally, all activity should be monitored and logged. This helps find attacks early and understand what happened if someone falls for a phishing message.
+
