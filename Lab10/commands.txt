@@ -1,0 +1,14 @@
+tayyisa@MacBook-Air-asiyat InfoSec % mkdir Lab10
+tayyisa@MacBook-Air-asiyat InfoSec % cd Lab10
+tayyisa@MacBook-Air-asiyat Lab10 % nginx -v
+
+nginx version: nginx/1.29.2
+
+tayyisa@MacBook-Air-asiyat Lab10 % nano my_site.html 
+tayyisa@MacBook-Air-asiyat Lab10 % nano nginx.conf
+tayyisa@MacBook-Air-asiyat Lab10 % nginx -t -c /Users/tayyisa/auca/InfoSec/Lab10/nginx.conf
+nginx: the configuration file /Users/tayyisa/auca/InfoSec/Lab10/nginx.conf syntax is ok
+nginx: configuration file /Users/tayyisa/auca/InfoSec/Lab10/nginx.conf test is successful
+
+tayyisa@MacBook-Air-asiyat Lab10 % nginx -c /Users/tayyisa/auca/InfoSec/Lab10/nginx.conf
+
