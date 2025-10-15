@@ -1,0 +1,40 @@
+tayyisa@MacBook-Air-asiyat InfoSec % mkdir Lab6_Additional
+tayyisa@MacBook-Air-asiyat InfoSec % cd Lab6_Additional
+tayyisa@MacBook-Air-asiyat Lab6_Additional % touch file1.txt file2.txt file3.txt
+tayyisa@MacBook-Air-asiyat Lab6_Additional % mkdir dir1 dir2
+tayyisa@MacBook-Air-asiyat Lab6_Additional % ls -la
+total 0
+drwxr-xr-x   7 tayyisa  staff  224 Oct 15 23:44 .
+drwxr-xr-x  18 tayyisa  staff  576 Oct 15 23:43 ..
+drwxr-xr-x   2 tayyisa  staff   64 Oct 15 23:44 dir1
+drwxr-xr-x   2 tayyisa  staff   64 Oct 15 23:44 dir2
+-rw-r--r--   1 tayyisa  staff    0 Oct 15 23:44 file1.txt
+-rw-r--r--   1 tayyisa  staff    0 Oct 15 23:44 file2.txt
+-rw-r--r--   1 tayyisa  staff    0 Oct 15 23:44 file3.txt
+tayyisa@MacBook-Air-asiyat Lab6_Additional % chmod 700 file1.txt
+tayyisa@MacBook-Air-asiyat Lab6_Additional % chmod 744 file2.txt
+tayyisa@MacBook-Air-asiyat Lab6_Additional % chmod 664 file3.txt
+tayyisa@MacBook-Air-asiyat Lab6_Additional % ls -l
+total 0
+drwxr-xr-x  2 tayyisa  staff  64 Oct 15 23:44 dir1
+drwxr-xr-x  2 tayyisa  staff  64 Oct 15 23:44 dir2
+-rwx------  1 tayyisa  staff   0 Oct 15 23:44 file1.txt
+-rwxr--r--  1 tayyisa  staff   0 Oct 15 23:44 file2.txt
+-rw-rw-r--  1 tayyisa  staff   0 Oct 15 23:44 file3.txt
+tayyisa@MacBook-Air-asiyat Lab6_Additional % sudo chown root file1.txt
+
+Password:
+tayyisa@MacBook-Air-asiyat Lab6_Additional % sudo chgrp everyone file2.txt
+
+tayyisa@MacBook-Air-asiyat Lab6_Additional % ls -l                        
+total 0
+drwxr-xr-x  2 tayyisa  staff     64 Oct 15 23:44 dir1
+drwxr-xr-x  2 tayyisa  staff     64 Oct 15 23:44 dir2
+-rwx------  1 root     staff      0 Oct 15 23:44 file1.txt
+-rwxr--r--  1 tayyisa  everyone   0 Oct 15 23:44 file2.txt
+-rw-rw-r--  1 tayyisa  staff      0 Oct 15 23:44 file3.txt
+tayyisa@MacBook-Air-asiyat Lab6_Additional % chmod 777 file3.txt
+tayyisa@MacBook-Air-asiyat Lab6_Additional % ls -l file3.txt
+-rwxrwxrwx  1 tayyisa  staff  0 Oct 15 23:44 file3.txt
+tayyisa@MacBook-Air-asiyat Lab6_Additional % 
+tayyisa@MacBook-Air-asiyat Lab6_Additional % 

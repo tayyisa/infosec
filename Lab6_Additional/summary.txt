@@ -1,0 +1,48 @@
+Summary Lab6
+
+I started by making a separate folder for the lab and then added three files and two directories inside it
+
+mkdir Lab6_Additional
+cd Lab6_Additional
+touch file1.txt file2.txt file3.txt
+mkdir dir1 dir2
+ls -la
+
+When I checked with ls -la, I saw that all files had the default permission rw-r--r-- and the directories had rwxr-xr-x. That means the owner (me) can read and write, and everyone else can only read.
+Then I changed the permissions for each file using chmod:
+
+chmod 700 file1.txt
+chmod 744 file2.txt
+chmod 664 file3.txt
+ls -l
+
+After that, file1 had only owner access, file2 was readable by everyone, and file3 could be edited by the owner and the group. It looked like this:
+
+-rwx------  1 tayyisa  staff   0 Oct 15 23:44 file1.txt
+-rwxr--r--  1 tayyisa  staff   0 Oct 15 23:44 file2.txt
+-rw-rw-r--  1 tayyisa  staff   0 Oct 15 23:44 file3.txt
+
+Next I changed who owned and managed some of the files. I made root the owner of file1 and changed the group for file2 to everyone:
+
+sudo chown root file1.txt
+sudo chgrp everyone file2.txt
+ls -l
+
+Now it looked like this:
+-rwx------  1 root     staff     0 Oct 15 23:44 file1.txt
+-rwxr--r--  1 tayyisa  everyone  0 Oct 15 23:44 file2.txt
+-rw-rw-r--  1 tayyisa  staff     0 Oct 15 23:44 file3.txt
+
+I tested what happens if permissions are set too open. I used chmod 777 on file3, which gives full access to everyone.
+
+chmod 777 file3.txt
+ls -l file3.txt
+
+The output was like this:
+-rwxrwxrwx  1 tayyisa  staff  0 Oct 15 23:44 file3.txt
+
+This means anyone on the system can read, write, or even delete that file. That’s a bad idea for security because it could easily be changed or damaged by another user or process. It’s a good example of why files should only have the permissions they really need.
+This helped me clearly see how permissions, ownership, and groups work in Linux/macOS. 
+It also showed how a simple command can make a big difference in who can access what. 
+Keeping permissions limited and auditing them regularly is important to keep files safe and prevent unwanted access.
+
