@@ -1,0 +1,31 @@
+List of used commands Lab9
+
+# 1. Check Homebrew version
+brew --version
+
+# 2. Check system status
+brew doctor
+
+# 3. Update package list
+brew update
+
+# 4. Upgrade installed packages
+brew upgrade
+
+# 5. Search for nginx package
+brew search nginx
+
+# 6. Install nginx
+brew install nginx
+
+# 7. Check nginx dependencies
+brew deps nginx
+
+# 8. Start nginx service
+brew services start nginx
+
+# 9. Check if nginx is running
+brew services list
+
+# 10. Open in browser manually
+# http://localhost:8080

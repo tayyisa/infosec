@@ -1,0 +1,1236 @@
+//very long document containing everything from terminal
+
+
+tayyisa@MacBook-Air-asiyat Lab9 % brew --version
+
+Homebrew 4.6.15
+tayyisa@MacBook-Air-asiyat Lab9 % brew doctor
+
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry or file an issue; just ignore this. Thanks!
+
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 16.4.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report Tier 2 unrelated issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+
+Warning: Some installed formulae are deprecated or disabled.
+You should find replacements for the following formulae:
+  icu4c@76
+
+Warning: You have the following deprecated, official taps tapped:
+  Homebrew/homebrew-services
+Untap them with `brew untap`.
+
+Warning: You have unlinked kegs in your Cellar.
+Leaving kegs unlinked can lead to build-trouble and cause formulae that depend on
+those kegs to fail to run properly once built. Run `brew link` on these:
+  mongodb-community@6.0
+
+Warning: Your Xcode (16.2) is outdated.
+Please update to Xcode 16.4 (or delete it).
+Xcode can be updated from the App Store.
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report Tier 2 unrelated issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+tayyisa@MacBook-Air-asiyat Lab9 % 
+tayyisa@MacBook-Air-asiyat Lab9 % brew update
+==> Updating Homebrew...
+Updated 3 taps (mongodb/brew, homebrew/core and homebrew/cask).
+==> New Formulae
+archgw: CLI for Arch Gateway
+cliproxyapi: Wrap Gemini CLI, Codex, Claude Code, Qwen Code as an API service
+config-file-validator: CLI tool to validate different configuration file types
+ctrld: Highly configurable, multi-protocol DNS forwarding proxy
+dnote: Simple command-line notebook
+granted: Easiest way to access your cloud
+libptytty: Library for OS-independent pseudo-TTY management
+litehtml: Fast and lightweight HTML/CSS rendering engine
+n8n-mcp: MCP for Claude Desktop, Claude Code, Windsurf, Cursor to build n8n workflows
+precice: Coupling library for partitioned multi-physics simulations
+pydantic-core: Core functionality for Pydantic validation and serialization
+pyscn: Intelligent Python Code Quality Analyzer
+python-gdbm@3.14: Python interface to gdbm
+python-tk@3.14: Python interface to Tcl/Tk
+python@3.14: Interpreted, interactive, object-oriented programming language
+qt3d: Provides functionality for near-realtime simulation systems
+qt5compat: Qt 5 Core APIs that were removed in Qt 6
+qtbase: Cross-platform application and UI framework
+qtcharts: UI Components for displaying visually pleasing charts
+qtconnectivity: Provides access to Bluetooth hardware
+qtdatavis3d: Provides functionality for 3D visualization
+qtdeclarative: QML, Qt Quick and several related modules
+qtgraphs: Provides functionality for 2D and 3D graphs
+qtgrpc: Provides support for communicating with gRPC services
+qthttpserver: Framework for embedding an HTTP server into a Qt application
+qtimageformats: Plugins for additional image formats: TIFF, MNG, TGA, WBMP
+qtlanguageserver: Implementation of the Language Server Protocol and JSON-RPC
+qtlocation: Provides C++ interfaces to retrieve location and navigational information
+qtlottie: Display graphics and animations exported by the Bodymovin plugin
+qtmultimedia: Provides APIs for playing back and recording audiovisual content
+qtnetworkauth: Provides support for OAuth-based authorization to online services
+qtpositioning: Provides access to position, satellite info and area monitoring classes
+qtquick3d: Provides a high-level API for creating 3D content or UIs based on Qt Quick
+qtquick3dphysics: High-level QML module adding physical simulation capabilities to Qt Quick 3D
+qtquickeffectmaker: Tool to create custom Qt Quick shader effects
+qtquicktimeline: Enables keyframe-based animations and parameterization
+qtremoteobjects: Provides APIs for inter-process communication
+qtscxml: Provides functionality to create state machines from SCXML files
+qtsensors: Provides access to sensors via QML and C++ interfaces
+qtserialbus: Provides access to serial industrial bus interfaces
+qtserialport: Provides classes to interact with hardware and virtual serial ports
+qtshadertools: Provides tools for the cross-platform Qt shader pipeline
+qtspeech: Enables access to text-to-speech engines
+qtsvg: Classes for displaying the contents of SVG files
+qttools: Facilitate the design, development, testing and deployment of applications
+qttranslations: Qt translation catalogs
+qtvirtualkeyboard: Provides an input framework and reference keyboard frontend
+qtwayland: Wayland platform plugin and QtWaylandCompositor API
+qtwebchannel: Bridges the gap between Qt applications and HTML/JavaScript
+qtwebengine: Provides functionality for rendering regions of dynamic web content
+qtwebsockets: Provides WebSocket communication compliant with RFC 6455
+qtwebview: Displays web content in a QML application
+radvd: IPv6 Router Advertisement Daemon
+rolesanywhere-credential-helper: Manages getting temporary security credentials from IAM Roles Anywhere
+tracetest: Build integration and end-to-end tests
+yuque-dl: Knowledge base downloader for Yuque
+==> New Casks
+emdash: UI for running multiple coding agents in parallel
+fastmail: Email client
+font-stack-sans-headline
+font-stack-sans-text
+font-with-a-syntax-highlighter
+liquibase-community: Library for database change tracking
+liquibase-secure: Database change management tool
+nook: Minimal browser with a sidebar-first design
+strawberry: AI-powered web browser
+supportcompanion: Provides utility and support tools
+temurin@25: JDK from the Eclipse Foundation (Adoptium)
+==> Outdated Formulae
+abseil                     jpeg-xl                    p11-kit
+aom                        leptonica                  pango
+bind                       libbluray                  pipx
+certifi                    libmicrohttpd              protobuf@29
+cjson                      libogg                     pyenv
+cmake                      libtiff                    python@3.10
+conan                      libunistring               python@3.11
+expat                      mbedtls                    python@3.13
+ffmpeg                     mongodb-community          qemu
+fontconfig                 mongodb-community@6.0      rav1e
+freetype                   mongodb-database-tools     sdl2
+frei0r                     mongosh                    svt-av1
+gh                         mpg123                     tcl-tk@8
+git-gui                    mysql                      theora
+harfbuzz                   node                       webp
+highway                    openexr                    x264
+icu4c@76                   openjpeg                   zeromq
+imath                      openssl@3                  zimg
+
+You have 54 outdated formulae installed.
+You can upgrade them with brew upgrade
+or list them with brew outdated.
+tayyisa@MacBook-Air-asiyat Lab9 % brew upgrade
+==> Upgrading 54 outdated packages:
+cjson 1.7.18 -> 1.7.19
+pyenv 2.6.8 -> 2.6.11
+libtiff 4.7.0 -> 4.7.1
+ffmpeg 7.1.1_3 -> 8.0_1
+mongodb/brew/mongodb-community 8.0.4 -> 8.2.1
+git-gui 2.48.1 -> 2.51.0_2
+mongodb/brew/mongodb-database-tools 100.9.5 -> 100.12.2
+gh 2.78.0 -> 2.81.0
+frei0r 2.3.3 -> 2.5.0
+cmake 3.31.4 -> 4.1.2
+freetype 2.13.3 -> 2.14.1_1
+imath 3.1.12 -> 3.2.2
+pipx 1.7.1_1 -> 1.8.0
+python@3.13 3.13.7 -> 3.13.8
+mpg123 1.33.0 -> 1.33.3
+libunistring 1.3 -> 1.4.1
+pango 1.56.3 -> 1.57.0
+expat 2.7.1 -> 2.7.3
+openjpeg 2.5.3 -> 2.5.4
+highway 1.2.0 -> 1.3.0
+zimg 3.0.5 -> 3.0.6
+libogg 1.3.5 -> 1.3.6
+mongosh 2.5.2 -> 2.5.8
+zeromq 4.3.5_1 -> 4.3.5_2
+harfbuzz 11.2.1 -> 12.1.0
+libbluray 1.3.4 -> 1.4.0
+aom 3.12.1 -> 3.13.1
+mbedtls 3.6.3.1 -> 3.6.4
+protobuf@29 29.4 -> 29.5_1
+webp 1.5.0 -> 1.6.0
+svt-av1 3.0.2 -> 3.1.2
+mongodb/brew/mongodb-community@6.0 6.0.20 -> 6.0.26
+openexr 3.3.3 -> 3.4.1
+fontconfig 2.16.0 -> 2.17.1
+certifi 2025.4.26 -> 2025.10.5_1
+openssl@3 3.5.2 -> 3.6.0
+libmicrohttpd 1.0.1 -> 1.0.2
+qemu 10.1.0 -> 10.1.1
+mysql 9.3.0 -> 9.4.0_3
+conan 2.17.0 -> 2.21.0
+rav1e 0.8.0 -> 0.8.1
+tcl-tk@8 8.6.16 -> 8.6.17
+leptonica 1.85.0 -> 1.86.0
+x264 r3108 -> r3222
+jpeg-xl 0.11.1_1 -> 0.11.1_3
+python@3.10 3.10.18_1 -> 3.10.19
+node 24.1.0 -> 24.10.0
+theora 1.1.1 -> 1.2.0
+sdl2 2.32.8 -> 2.32.10
+bind 9.20.9 -> 9.20.13
+python@3.11 3.11.13 -> 3.11.14
+p11-kit 0.25.5 -> 0.25.10
+icu4c@76 76.1_1 -> 76.1_2
+abseil 20240722.1 -> 20250814.1
+==> Fetching downloads for: openssl@3, tcl-tk@8, expat, icu4c@76, abseil, protobuf@29, mongodb-database-tools, node, mongosh, mongodb-community, git-gui, gh, frei0r, cmake, freetype, imath, pipx, python@3.13, mpg123, libunistring, fontconfig, harfbuzz, pango, libtiff, openjpeg, highway, zimg, libogg, zeromq, libbluray, openexr, webp, jpeg-xl, aom, mbedtls, svt-av1, mongodb-community@6.0, certifi, p11-kit, libmicrohttpd, qemu, mysql, conan, rav1e, leptonica, x264, python@3.10, theora, sdl2, bind, python@3.11, cjson, pyenv and ffmpeg
+Warning: icu4c@76 has been deprecated because it is a versioned formula! It will be disabled on 2026-03-29.
+==> Fetching openssl@3
+==> Downloading https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:9a8fa2ae
+######################################################################### 100.0%
+==> Fetching tcl-tk@8
+==> Downloading https://ghcr.io/v2/homebrew/core/tcl-tk/8/blobs/sha256:fd1ae557a
+######################################################################### 100.0%
+==> Fetching expat
+==> Downloading https://ghcr.io/v2/homebrew/core/expat/blobs/sha256:cce13237e115
+######################################################################### 100.0%
+==> Fetching icu4c@76
+==> Downloading https://ghcr.io/v2/homebrew/core/icu4c/76/blobs/sha256:36740927f
+######################################################################### 100.0%
+==> Fetching abseil
+==> Downloading https://ghcr.io/v2/homebrew/core/abseil/blobs/sha256:fc8915867a2
+######################################################################### 100.0%
+==> Fetching protobuf@29
+==> Downloading https://ghcr.io/v2/homebrew/core/protobuf/29/blobs/sha256:528c42
+######################################################################### 100.0%
+==> Fetching mongodb/brew/mongodb-database-tools
+==> Downloading https://fastdl.mongodb.org/tools/db/mongodb-database-tools-macos
+######################################################################### 100.0%
+==> Fetching dependencies for node: libnghttp3, libngtcp2, simdjson and uvwasi
+==> Downloading https://ghcr.io/v2/homebrew/core/libnghttp3/manifests/1.12.0
+######################################################################### 100.0%
+==> Fetching libnghttp3
+==> Downloading https://ghcr.io/v2/homebrew/core/libnghttp3/blobs/sha256:1eb2c78
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libngtcp2/manifests/1.16.0
+######################################################################### 100.0%
+==> Fetching libngtcp2
+==> Downloading https://ghcr.io/v2/homebrew/core/libngtcp2/blobs/sha256:edcf609b
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/simdjson/manifests/4.0.7
+######################################################################### 100.0%
+==> Fetching simdjson
+==> Downloading https://ghcr.io/v2/homebrew/core/simdjson/blobs/sha256:847446278
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/uvwasi/manifests/0.0.23-1
+######################################################################### 100.0%
+==> Fetching uvwasi
+==> Downloading https://ghcr.io/v2/homebrew/core/uvwasi/blobs/sha256:3bbe2380eb1
+######################################################################### 100.0%
+==> Fetching node
+==> Downloading https://ghcr.io/v2/homebrew/core/node/blobs/sha256:b59155fcc0b6d
+######################################################################### 100.0%
+==> Fetching mongosh
+==> Downloading https://ghcr.io/v2/homebrew/core/mongosh/blobs/sha256:601e71af05
+######################################################################### 100.0%
+==> Fetching mongodb/brew/mongodb-community
+==> Downloading https://fastdl.mongodb.org/osx/mongodb-macos-arm64-8.2.1.tgz
+######################################################################### 100.0%
+==> Fetching dependencies for git-gui: libtommath and tcl-tk
+==> Downloading https://ghcr.io/v2/homebrew/core/libtommath/manifests/1.3.0
+######################################################################### 100.0%
+==> Fetching libtommath
+==> Downloading https://ghcr.io/v2/homebrew/core/libtommath/blobs/sha256:180de0f
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/tcl-tk/manifests/9.0.2-2
+######################################################################### 100.0%
+==> Fetching tcl-tk
+==> Downloading https://ghcr.io/v2/homebrew/core/tcl-tk/blobs/sha256:e019a7b2e5d
+######################################################################### 100.0%
+==> Fetching git-gui
+==> Downloading https://ghcr.io/v2/homebrew/core/git-gui/blobs/sha256:a4823322be
+######################################################################### 100.0%
+==> Fetching gh
+==> Downloading https://ghcr.io/v2/homebrew/core/gh/blobs/sha256:d419fc9cfecf80e
+######################################################################### 100.0%
+==> Fetching frei0r
+==> Downloading https://ghcr.io/v2/homebrew/core/frei0r/blobs/sha256:64fe8ea2a32
+######################################################################### 100.0%
+==> Fetching cmake
+==> Downloading https://ghcr.io/v2/homebrew/core/cmake/blobs/sha256:4f6862c61ce2
+######################################################################### 100.0%
+==> Fetching freetype
+==> Downloading https://ghcr.io/v2/homebrew/core/freetype/blobs/sha256:40c5e9659
+######################################################################### 100.0%
+==> Fetching imath
+==> Downloading https://ghcr.io/v2/homebrew/core/imath/blobs/sha256:473751d98327
+######################################################################### 100.0%
+==> Fetching dependencies for pipx: python@3.14
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.14/manifests/3.14.0-1
+######################################################################### 100.0%
+==> Fetching python@3.14
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:e7f6cf
+######################################################################### 100.0%
+==> Fetching pipx
+==> Downloading https://ghcr.io/v2/homebrew/core/pipx/blobs/sha256:3fef69289fa10
+######################################################################### 100.0%
+==> Fetching python@3.13
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.13/blobs/sha256:e20513
+######################################################################### 100.0%
+==> Fetching mpg123
+==> Downloading https://ghcr.io/v2/homebrew/core/mpg123/blobs/sha256:5c0f3a5461e
+######################################################################### 100.0%
+==> Fetching libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:dbc87
+######################################################################### 100.0%
+==> Fetching fontconfig
+==> Downloading https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:357516d
+######################################################################### 100.0%
+==> Fetching harfbuzz
+==> Downloading https://ghcr.io/v2/homebrew/core/harfbuzz/blobs/sha256:b4db264da
+######################################################################### 100.0%
+==> Fetching pango
+==> Downloading https://ghcr.io/v2/homebrew/core/pango/blobs/sha256:af46edb4113f
+######################################################################### 100.0%
+==> Fetching libtiff
+==> Downloading https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:e32b6017d7
+######################################################################### 100.0%
+==> Fetching openjpeg
+==> Downloading https://ghcr.io/v2/homebrew/core/openjpeg/blobs/sha256:8e3ac3314
+######################################################################### 100.0%
+==> Fetching highway
+==> Downloading https://ghcr.io/v2/homebrew/core/highway/blobs/sha256:0dfc837e61
+######################################################################### 100.0%
+==> Fetching zimg
+==> Downloading https://ghcr.io/v2/homebrew/core/zimg/blobs/sha256:ee8314ce01c48
+######################################################################### 100.0%
+==> Fetching libogg
+==> Downloading https://ghcr.io/v2/homebrew/core/libogg/blobs/sha256:2423ff6b931
+######################################################################### 100.0%
+==> Fetching zeromq
+==> Downloading https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:03990812828
+######################################################################### 100.0%
+==> Fetching dependencies for libbluray: libudfread
+==> Downloading https://ghcr.io/v2/homebrew/core/libudfread/manifests/1.2.0
+######################################################################### 100.0%
+==> Fetching libudfread
+==> Downloading https://ghcr.io/v2/homebrew/core/libudfread/blobs/sha256:a563689
+######################################################################### 100.0%
+==> Fetching libbluray
+==> Downloading https://ghcr.io/v2/homebrew/core/libbluray/blobs/sha256:c0de9ea8
+######################################################################### 100.0%
+==> Fetching dependencies for openexr: openjph
+==> Downloading https://ghcr.io/v2/homebrew/core/openjph/manifests/0.24.2
+######################################################################### 100.0%
+==> Fetching openjph
+==> Downloading https://ghcr.io/v2/homebrew/core/openjph/blobs/sha256:badccdb9a7
+######################################################################### 100.0%
+==> Fetching openexr
+==> Downloading https://ghcr.io/v2/homebrew/core/openexr/blobs/sha256:72f6f0c2ab
+######################################################################### 100.0%
+==> Fetching webp
+==> Downloading https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:ad74e4538a799
+######################################################################### 100.0%
+==> Fetching jpeg-xl
+==> Downloading https://ghcr.io/v2/homebrew/core/jpeg-xl/blobs/sha256:73de0c3b5c
+######################################################################### 100.0%
+==> Fetching aom
+==> Downloading https://ghcr.io/v2/homebrew/core/aom/blobs/sha256:ca79133eb9a4ec
+######################################################################### 100.0%
+==> Fetching mbedtls
+==> Downloading https://ghcr.io/v2/homebrew/core/mbedtls/blobs/sha256:1d8f7928cb
+######################################################################### 100.0%
+==> Fetching svt-av1
+==> Downloading https://ghcr.io/v2/homebrew/core/svt-av1/blobs/sha256:8c2b600f85
+######################################################################### 100.0%
+==> Fetching mongodb/brew/mongodb-community@6.0
+==> Downloading https://fastdl.mongodb.org/osx/mongodb-macos-arm64-6.0.26.tgz
+######################################################################### 100.0%
+==> Fetching certifi
+==> Downloading https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:33b92b7c10
+######################################################################### 100.0%
+==> Fetching p11-kit
+==> Downloading https://ghcr.io/v2/homebrew/core/p11-kit/blobs/sha256:5c946df0d4
+######################################################################### 100.0%
+==> Fetching libmicrohttpd
+==> Downloading https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:b7a2
+######################################################################### 100.0%
+==> Fetching qemu
+==> Downloading https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:aee3c57d6c79b
+######################################################################### 100.0%
+==> Fetching mysql
+==> Downloading https://ghcr.io/v2/homebrew/core/mysql/blobs/sha256:6e82a798b7e2
+######################################################################### 100.0%
+==> Fetching conan
+==> Downloading https://ghcr.io/v2/homebrew/core/conan/blobs/sha256:6eae3099880d
+######################################################################### 100.0%
+==> Fetching rav1e
+==> Downloading https://ghcr.io/v2/homebrew/core/rav1e/blobs/sha256:61118a13d9f4
+######################################################################### 100.0%
+==> Fetching leptonica
+==> Downloading https://ghcr.io/v2/homebrew/core/leptonica/blobs/sha256:797df03f
+######################################################################### 100.0%
+==> Fetching x264
+==> Downloading https://ghcr.io/v2/homebrew/core/x264/blobs/sha256:a613d44ead5d3
+######################################################################### 100.0%
+==> Fetching python@3.10
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.10/blobs/sha256:8647b0
+######################################################################### 100.0%
+==> Fetching theora
+==> Downloading https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:0474983a6d3
+######################################################################### 100.0%
+==> Fetching sdl2
+==> Downloading https://ghcr.io/v2/homebrew/core/sdl2/blobs/sha256:702b9e09ac8a7
+######################################################################### 100.0%
+==> Fetching bind
+==> Downloading https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:f273f5b6a67d0
+######################################################################### 100.0%
+==> Fetching python@3.11
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.11/blobs/sha256:1f94f3
+######################################################################### 100.0%
+==> Fetching cjson
+==> Downloading https://ghcr.io/v2/homebrew/core/cjson/blobs/sha256:02864d4e743d
+######################################################################### 100.0%
+==> Fetching pyenv
+==> Downloading https://ghcr.io/v2/homebrew/core/pyenv/blobs/sha256:599c4403045f
+######################################################################### 100.0%
+==> Fetching ffmpeg
+==> Downloading https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:e187d42e699
+######################################################################### 100.0%
+==> Upgrading openssl@3
+  3.5.2 -> 3.6.0 
+==> Pouring openssl@3--3.6.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openssl@3/3.6.0: 7,609 files, 36.0MB
+==> Running `brew cleanup openssl@3`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+Removing: /opt/homebrew/Cellar/openssl@3/3.5.0... (7,563 files, 35.3MB)
+Removing: /opt/homebrew/Cellar/openssl@3/3.5.2... (7,563 files, 35.4MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/openssl@3_bottle_manifest--3.5.0... (11.9KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/openssl@3_bottle_manifest--3.5.2... (11.8KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/openssl@3--3.5.0... (10.2MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/openssl@3--3.5.2... (10.2MB)
+==> Upgrading tcl-tk@8
+  8.6.16 -> 8.6.17 
+==> Pouring tcl-tk@8--8.6.17.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/tcl-tk@8/8.6.17: 3,072 files, 35.7MB
+==> Running `brew cleanup tcl-tk@8`...
+Removing: /opt/homebrew/Cellar/tcl-tk@8/8.6.16... (3,070 files, 35.7MB)
+==> Upgrading expat
+  2.7.1 -> 2.7.3 
+==> Pouring expat--2.7.3.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/expat/2.7.3: 23 files, 702.7KB
+==> Running `brew cleanup expat`...
+Removing: /opt/homebrew/Cellar/expat/2.7.1... (23 files, 684.4KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/expat_bottle_manifest--2.7.1... (8.4KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/expat--2.7.1... (215.7KB)
+==> Upgrading icu4c@76
+  76.1_1 -> 76.1_2 
+==> Pouring icu4c@76--76.1_2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/icu4c@76/76.1_2: 277 files, 81MB
+==> Running `brew cleanup icu4c@76`...
+Removing: /opt/homebrew/Cellar/icu4c@76/76.1_1... (277 files, 81MB)
+==> Upgrading abseil
+  20240722.1 -> 20250814.1 
+==> Pouring abseil--20250814.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/abseil/20250814.1: 778 files, 12MB
+==> Running `brew cleanup abseil`...
+Removing: /opt/homebrew/Cellar/abseil/20240722.1... (772 files, 11.8MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/abseil_bottle_manifest--20240722.1-1... (64.8KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/abseil--20240722.1... (1.7MB)
+==> Upgrading protobuf@29
+  29.4 -> 29.5_1 
+==> Pouring protobuf@29--29.5_1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/protobuf@29/29.5_1: 445 files, 15.3MB
+==> Running `brew cleanup protobuf@29`...
+Removing: /opt/homebrew/Cellar/protobuf@29/29.4... (445 files, 15.4MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/protobuf@29_bottle_manifest--29.4... (11.5KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/protobuf@29--29.4... (3.2MB)
+==> Upgrading mongodb/brew/mongodb-database-tools
+  100.9.5 -> 100.12.2 
+Warning: Your Xcode (16.2) is outdated.
+Please update to Xcode 16.4 (or delete it).
+Xcode can be updated from the App Store.
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report Tier 2 unrelated issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 16.4.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report Tier 2 unrelated issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+🍺  /opt/homebrew/Cellar/mongodb-database-tools/100.12.2: 15 files, 123.0MB, built in 1 second
+==> Running `brew cleanup mongodb-database-tools`...
+Removing: /opt/homebrew/Cellar/mongodb-database-tools/100.9.5... (15 files, 114.2MB)
+==> Upgrading node
+  24.1.0 -> 24.10.0 
+==> Installing dependencies for node: libnghttp3, libngtcp2, simdjson and uvwasi
+==> Installing node dependency: libnghttp3
+==> Downloading https://ghcr.io/v2/homebrew/core/libnghttp3/manifests/1.12.0
+Already downloaded: /Users/tayyisa/Library/Caches/Homebrew/downloads/870c7405e7536d3964d6a4063f552f6ba7db08a1057381685a9f9c177df71c9f--libnghttp3-1.12.0.bottle_manifest.json
+==> Pouring libnghttp3--1.12.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libnghttp3/1.12.0: 20 files, 589.2KB
+==> Installing node dependency: libngtcp2
+==> Downloading https://ghcr.io/v2/homebrew/core/libngtcp2/manifests/1.16.0
+Already downloaded: /Users/tayyisa/Library/Caches/Homebrew/downloads/290446528002e942cbf1c2e8a47e708849a12d950e04c3d3a116637d0df3de89--libngtcp2-1.16.0.bottle_manifest.json
+==> Pouring libngtcp2--1.16.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libngtcp2/1.16.0: 21 files, 1.3MB
+==> Installing node dependency: simdjson
+==> Downloading https://ghcr.io/v2/homebrew/core/simdjson/manifests/4.0.7
+Already downloaded: /Users/tayyisa/Library/Caches/Homebrew/downloads/b037dadb18347fedfc8816e145a3fee0a418844d6deb50c11adeb4ac69564964--simdjson-4.0.7.bottle_manifest.json
+==> Pouring simdjson--4.0.7.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/simdjson/4.0.7: 17 files, 5.9MB
+==> Installing node dependency: uvwasi
+==> Downloading https://ghcr.io/v2/homebrew/core/uvwasi/manifests/0.0.23-1
+Already downloaded: /Users/tayyisa/Library/Caches/Homebrew/downloads/d9fc39e8e8eb3c4e33b14bafb8f46ce7c30a8814a9d2ff809f4a27525ec96893--uvwasi-0.0.23-1.bottle_manifest.json
+==> Pouring uvwasi--0.0.23.arm64_sequoia.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/uvwasi/0.0.23: 15 files, 282.6KB
+==> Installing node
+==> Pouring node--24.10.0.arm64_sequoia.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/node/24.10.0: 2,468 files, 75.7MB
+==> Running `brew cleanup node`...
+Removing: /opt/homebrew/Cellar/node/24.1.0... (2,460 files, 94MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/node_bottle_manifest--24.1.0... (21.2KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/node--24.1.0... (21.7MB)
+==> Upgrading mongosh
+  2.5.2 -> 2.5.8 
+==> Pouring mongosh--2.5.8.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/mongosh/2.5.8: 13,217 files, 99.9MB
+==> Running `brew cleanup mongosh`...
+Removing: /opt/homebrew/Cellar/mongosh/2.5.2... (11,661 files, 69.7MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/mongosh_bottle_manifest--2.5.2... (65.6KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/mongosh--2.5.2... (15.3MB)
+==> Upgrading mongodb/brew/mongodb-community
+  8.0.4 -> 8.2.1 
+Warning: Your Xcode (16.2) is outdated.
+Please update to Xcode 16.4 (or delete it).
+Xcode can be updated from the App Store.
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report Tier 2 unrelated issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 16.4.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report Tier 2 unrelated issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> Caveats
+To restart mongodb/brew/mongodb-community after an upgrade:
+  brew services restart mongodb/brew/mongodb-community
+==> Summary
+🍺  /opt/homebrew/Cellar/mongodb-community/8.2.1: 12 files, 243MB, built in 2 seconds
+==> Running `brew cleanup mongodb-community`...
+Removing: /opt/homebrew/Cellar/mongodb-community/8.0.4... (12 files, 339.9MB)
+==> Upgrading git-gui
+  2.48.1 -> 2.51.0_2 
+==> Installing dependencies for git-gui: libtommath and tcl-tk
+==> Installing git-gui dependency: libtommath
+==> Downloading https://ghcr.io/v2/homebrew/core/libtommath/manifests/1.3.0
+Already downloaded: /Users/tayyisa/Library/Caches/Homebrew/downloads/ef0348de57a0a05db93896c0262f3ca870cb09716b9ece7572affab5e7e52423--libtommath-1.3.0.bottle_manifest.json
+==> Pouring libtommath--1.3.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libtommath/1.3.0: 12 files, 530.6KB
+==> Installing git-gui dependency: tcl-tk
+==> Downloading https://ghcr.io/v2/homebrew/core/tcl-tk/manifests/9.0.2-2
+Already downloaded: /Users/tayyisa/Library/Caches/Homebrew/downloads/655a4427e65b29b8f16b1b55778ab9186f6a2bd61f65053ff895b2df8c1a6689--tcl-tk-9.0.2-2.bottle_manifest.json
+==> Pouring tcl-tk--9.0.2.arm64_sequoia.bottle.2.tar.gz
+🍺  /opt/homebrew/Cellar/tcl-tk/9.0.2: 3,157 files, 38.1MB
+==> Installing git-gui
+==> Pouring git-gui--2.51.0_2.all.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/git-gui/2.51.0_2: 81 files, 2.2MB
+==> Running `brew cleanup git-gui`...
+Removing: /opt/homebrew/Cellar/git-gui/2.48.1... (80 files, 2.2MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/git-gui_bottle_manifest--2.49.0... (2.4KB)
+==> Upgrading gh
+  2.78.0 -> 2.81.0 
+==> Pouring gh--2.81.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gh/2.81.0: 220 files, 51MB
+==> Running `brew cleanup gh`...
+Removing: /opt/homebrew/Cellar/gh/2.78.0... (214 files, 50.6MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/gh_bottle_manifest--2.78.0... (7.1KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/gh--2.78.0... (15.9MB)
+==> Upgrading frei0r
+  2.3.3 -> 2.5.0 
+==> Pouring frei0r--2.5.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/frei0r/2.5.0: 164 files, 5.7MB
+==> Running `brew cleanup frei0r`...
+Removing: /opt/homebrew/Cellar/frei0r/2.3.3... (157 files, 5.6MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/frei0r_bottle_manifest--2.3.3... (9.6KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/frei0r--2.3.3... (643.4KB)
+==> Upgrading cmake
+  3.31.4 -> 4.1.2 
+==> Pouring cmake--4.1.2.arm64_sequoia.bottle.tar.gz
+==> Caveats
+To install the CMake documentation, run:
+  brew install cmake-docs
+==> Summary
+🍺  /opt/homebrew/Cellar/cmake/4.1.2: 3,913 files, 58.6MB
+==> Running `brew cleanup cmake`...
+Removing: /opt/homebrew/Cellar/cmake/3.31.4... (3,767 files, 56.5MB)
+==> Upgrading freetype
+  2.13.3 -> 2.14.1_1 
+==> Pouring freetype--2.14.1_1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/freetype/2.14.1_1: 68 files, 2.6MB
+==> Running `brew cleanup freetype`...
+Removing: /opt/homebrew/Cellar/freetype/2.13.3... (68 files, 2.5MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/freetype_bottle_manifest--2.13.3... (11.8KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/freetype--2.13.3... (937.6KB)
+==> Upgrading imath
+  3.1.12 -> 3.2.2 
+==> Pouring imath--3.2.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/imath/3.2.2: 50 files, 966.9KB
+==> Running `brew cleanup imath`...
+Removing: /opt/homebrew/Cellar/imath/3.1.12... (50 files, 947.1KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/imath_bottle_manifest--3.1.12... (10.2KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/imath--3.1.12... (186.6KB)
+==> Upgrading pipx
+  1.7.1_1 -> 1.8.0 
+==> Installing pipx dependency: python@3.14
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.14/manifests/3.14.0-1
+Already downloaded: /Users/tayyisa/Library/Caches/Homebrew/downloads/1545abedaa1a97b9671270782810b39778441ae331b93cb2fc04d60233ec4df0--python@3.14-3.14.0-1.bottle_manifest.json
+==> Pouring python@3.14--3.14.0.arm64_sequoia.bottle.1.tar.gz
+Warning: These files were overwritten during the `brew link` step:
+/opt/homebrew/bin/idle3
+/opt/homebrew/bin/pip3
+/opt/homebrew/bin/pydoc3
+/opt/homebrew/bin/python3
+/opt/homebrew/bin/python3-config
+/opt/homebrew/bin/wheel3
+/opt/homebrew/share/man/man1/python3.1
+/opt/homebrew/lib/pkgconfig/python3-embed.pc
+/opt/homebrew/lib/pkgconfig/python3.pc
+/opt/homebrew/Frameworks/Python.framework/Headers
+/opt/homebrew/Frameworks/Python.framework/Python
+/opt/homebrew/Frameworks/Python.framework/Resources
+/opt/homebrew/Frameworks/Python.framework/Versions/Current
+
+They have been backed up to: /Users/tayyisa/Library/Caches/Homebrew/Backup
+==> Summary
+🍺  /opt/homebrew/Cellar/python@3.14/3.14.0: 3,743 files, 69.5MB
+==> Pouring pipx--1.8.0.all.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/pipx/1.8.0: 157 files, 1MB
+==> Running `brew cleanup pipx`...
+Removing: /opt/homebrew/Cellar/pipx/1.7.1_1... (218 files, 1.6MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/pipx_bottle_manifest--1.7.1_1-1... (4.4KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/pipx--1.7.1_1... (268KB)
+==> Upgrading python@3.13
+  3.13.7 -> 3.13.8 
+==> Pouring python@3.13--3.13.8.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/python@3.13/3.13.8: 3,615 files, 66.6MB
+==> Running `brew cleanup python@3.13`...
+Removing: /opt/homebrew/Cellar/python@3.13/3.13.7... (3,900 files, 73MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/python@3.13_bottle_manifest--3.13.7... (27KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/python@3.13--3.13.7... (17MB)
+==> Upgrading mpg123
+  1.33.0 -> 1.33.3 
+==> Pouring mpg123--1.33.3.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/mpg123/1.33.3: 34 files, 2.0MB
+==> Running `brew cleanup mpg123`...
+Removing: /opt/homebrew/Cellar/mpg123/1.33.0... (34 files, 2.0MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/mpg123_bottle_manifest--1.33.0... (9.3KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/mpg123--1.33.0... (634.5KB)
+==> Upgrading libunistring
+  1.3 -> 1.4.1 
+==> Pouring libunistring--1.4.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libunistring/1.4.1: 59 files, 5.5MB
+==> Running `brew cleanup libunistring`...
+Removing: /opt/homebrew/Cellar/libunistring/1.3... (59 files, 5.4MB)
+==> Upgrading fontconfig
+  2.16.0 -> 2.17.1 
+==> Pouring fontconfig--2.17.1.arm64_sequoia.bottle.1.tar.gz
+==> Regenerating font cache, this may take a while
+==> /opt/homebrew/Cellar/fontconfig/2.17.1/bin/fc-cache --force --really-force -
+🍺  /opt/homebrew/Cellar/fontconfig/2.17.1: 98 files, 1.5MB
+==> Running `brew cleanup fontconfig`...
+Removing: /opt/homebrew/Cellar/fontconfig/2.16.0... (92 files, 1.5MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/fontconfig_bottle_manifest--2.16.0... (13.2KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/fontconfig--2.16.0... (378.5KB)
+==> Upgrading harfbuzz
+  11.2.1 -> 12.1.0 
+==> Pouring harfbuzz--12.1.0.arm64_sequoia.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/harfbuzz/12.1.0: 77 files, 12.0MB
+==> Running `brew cleanup harfbuzz`...
+Removing: /opt/homebrew/Cellar/harfbuzz/11.2.1... (77 files, 10MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/harfbuzz_bottle_manifest--11.2.1... (32.4KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/harfbuzz--11.2.1... (2.6MB)
+==> Upgrading pango
+  1.56.3 -> 1.57.0 
+==> Pouring pango--1.57.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pango/1.57.0: 69 files, 3.6MB
+==> Running `brew cleanup pango`...
+Removing: /opt/homebrew/Cellar/pango/1.56.3... (69 files, 3.4MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/pango_bottle_manifest--1.56.3... (30.7KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/pango--1.56.3... (829.6KB)
+==> Upgrading libtiff
+  4.7.0 -> 4.7.1 
+==> Pouring libtiff--4.7.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libtiff/4.7.1: 488 files, 8.6MB
+==> Running `brew cleanup libtiff`...
+Removing: /opt/homebrew/Cellar/libtiff/4.7.0... (486 files, 8.4MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/libtiff_bottle_manifest--4.7.0-1... (13.5KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/libtiff--4.7.0... (1.8MB)
+==> Upgrading openjpeg
+  2.5.3 -> 2.5.4 
+==> Pouring openjpeg--2.5.4.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openjpeg/2.5.4: 512 files, 14MB
+==> Running `brew cleanup openjpeg`...
+Removing: /opt/homebrew/Cellar/openjpeg/2.5.3... (543 files, 14.5MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/openjpeg_bottle_manifest--2.5.3... (14.6KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/openjpeg--2.5.3... (2.2MB)
+==> Upgrading highway
+  1.2.0 -> 1.3.0 
+==> Pouring highway--1.3.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/highway/1.3.0: 81 files, 5.3MB
+==> Running `brew cleanup highway`...
+Removing: /opt/homebrew/Cellar/highway/1.2.0... (75 files, 4.2MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/highway_bottle_manifest--1.2.0... (9.9KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/highway--1.2.0... (733.9KB)
+==> Upgrading zimg
+  3.0.5 -> 3.0.6 
+==> Pouring zimg--3.0.6.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/zimg/3.0.6: 28 files, 1.1MB
+==> Running `brew cleanup zimg`...
+Removing: /opt/homebrew/Cellar/zimg/3.0.5... (28 files, 1.1MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/zimg_bottle_manifest--3.0.5... (11.4KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/zimg--3.0.5... (341.3KB)
+==> Upgrading libogg
+  1.3.5 -> 1.3.6 
+==> Pouring libogg--1.3.6.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libogg/1.3.6: 103 files, 538.2KB
+==> Running `brew cleanup libogg`...
+Removing: /opt/homebrew/Cellar/libogg/1.3.5... (104 files, 539.2KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/libogg_bottle_manifest--1.3.5-2... (11.4KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/libogg--1.3.5... (228.3KB)
+==> Upgrading zeromq
+  4.3.5_1 -> 4.3.5_2 
+==> Pouring zeromq--4.3.5_2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/zeromq/4.3.5_2: 85 files, 6.4MB
+==> Running `brew cleanup zeromq`...
+Removing: /opt/homebrew/Cellar/zeromq/4.3.5_1... (85 files, 6.2MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/zeromq_bottle_manifest--4.3.5_1... (10.5KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/zeromq--4.3.5_1... (1.6MB)
+==> Upgrading libbluray
+  1.3.4 -> 1.4.0 
+==> Installing libbluray dependency: libudfread
+==> Downloading https://ghcr.io/v2/homebrew/core/libudfread/manifests/1.2.0
+Already downloaded: /Users/tayyisa/Library/Caches/Homebrew/downloads/0e101e8cb6cd3d57390b8ae34720c46dc2f4f1e8f0a00aa7be37a93771109d13--libudfread-1.2.0.bottle_manifest.json
+==> Pouring libudfread--1.2.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libudfread/1.2.0: 13 files, 153.5KB
+==> Pouring libbluray--1.4.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libbluray/1.4.0: 22 files, 1.2MB
+==> Running `brew cleanup libbluray`...
+Removing: /opt/homebrew/Cellar/libbluray/1.3.4... (22 files, 1MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/libbluray_bottle_manifest--1.3.4... (17.2KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/libbluray--1.3.4... (353.5KB)
+==> Upgrading openexr
+  3.3.3 -> 3.4.1 
+==> Installing openexr dependency: openjph
+==> Downloading https://ghcr.io/v2/homebrew/core/openjph/manifests/0.24.2
+Already downloaded: /Users/tayyisa/Library/Caches/Homebrew/downloads/7ea6e2251a31ea829c17feb3acf72d6e824f0d8996217655c442c9905c2a3161--openjph-0.24.2.bottle_manifest.json
+==> Pouring openjph--0.24.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openjph/0.24.2: 25 files, 622.5KB
+==> Pouring openexr--3.4.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/openexr/3.4.1: 212 files, 4.9MB
+==> Running `brew cleanup openexr`...
+Removing: /opt/homebrew/Cellar/openexr/3.3.3... (210 files, 4.8MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/openexr_bottle_manifest--3.3.3... (11.5KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/openexr--3.3.3... (1.1MB)
+==> Upgrading webp
+  1.5.0 -> 1.6.0 
+==> Pouring webp--1.6.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/webp/1.6.0: 64 files, 2.5MB
+==> Running `brew cleanup webp`...
+Removing: /opt/homebrew/Cellar/webp/1.5.0... (64 files, 2.5MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/webp_bottle_manifest--1.5.0... (15.8KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/webp--1.5.0... (883.4KB)
+==> Upgrading jpeg-xl
+  0.11.1_1 -> 0.11.1_3 
+==> Pouring jpeg-xl--0.11.1_3.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/jpeg-xl/0.11.1_3: 64 files, 34.4MB
+==> Running `brew cleanup jpeg-xl`...
+Removing: /opt/homebrew/Cellar/jpeg-xl/0.11.1_1... (64 files, 35.1MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/jpeg-xl_bottle_manifest--0.11.1_1... (28.5KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/jpeg-xl--0.11.1_1... (13.5MB)
+==> Upgrading aom
+  3.12.1 -> 3.13.1 
+==> Pouring aom--3.13.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/aom/3.13.1: 28 files, 10.2MB
+==> Running `brew cleanup aom`...
+Removing: /opt/homebrew/Cellar/aom/3.12.1... (24 files, 9.8MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/aom_bottle_manifest--3.12.1... (27.8KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/aom--3.12.1... (3.9MB)
+==> Upgrading mbedtls
+  3.6.3.1 -> 3.6.4 
+==> Pouring mbedtls--3.6.4.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/mbedtls/3.6.4: 198 files, 13.3MB
+==> Running `brew cleanup mbedtls`...
+Removing: /opt/homebrew/Cellar/mbedtls/3.6.3.1... (198 files, 13.3MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/mbedtls_bottle_manifest--3.6.3.1... (15.4KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/mbedtls--3.6.3.1... (3.4MB)
+==> Upgrading svt-av1
+  3.0.2 -> 3.1.2 
+==> Pouring svt-av1--3.1.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/svt-av1/3.1.2: 19 files, 3.3MB
+==> Running `brew cleanup svt-av1`...
+Removing: /opt/homebrew/Cellar/svt-av1/3.0.2... (18 files, 3.2MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/svt-av1_bottle_manifest--3.0.2... (8.5KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/svt-av1--3.0.2... (1.3MB)
+==> Upgrading mongodb/brew/mongodb-community@6.0
+  6.0.20 -> 6.0.26 
+Warning: Your Xcode (16.2) is outdated.
+Please update to Xcode 16.4 (or delete it).
+Xcode can be updated from the App Store.
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report Tier 2 unrelated issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Settings.
+
+If that doesn't show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 16.4.
+
+
+
+This is a Tier 2 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-2
+You can report Tier 2 unrelated issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /opt/homebrew
+Could not symlink bin/install_compass
+Target /opt/homebrew/bin/install_compass
+is a symlink belonging to mongodb-community. You can unlink it:
+  brew unlink mongodb-community
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite mongodb-community@6.0
+
+To list all files that would be deleted:
+  brew link --overwrite mongodb-community@6.0 --dry-run
+
+Possible conflicting files are:
+/opt/homebrew/bin/install_compass -> /opt/homebrew/Cellar/mongodb-community/8.2.1/bin/install_compass
+/opt/homebrew/bin/mongod -> /opt/homebrew/Cellar/mongodb-community/8.2.1/bin/mongod
+/opt/homebrew/bin/mongos -> /opt/homebrew/Cellar/mongodb-community/8.2.1/bin/mongos
+==> Caveats
+To start mongodb/brew/mongodb-community@6.0 now and restart at login:
+  brew services start mongodb/brew/mongodb-community@6.0
+==> Summary
+🍺  /opt/homebrew/Cellar/mongodb-community@6.0/6.0.26: 12 files, 202.7MB, built in 2 seconds
+==> Running `brew cleanup mongodb-community@6.0`...
+Removing: /opt/homebrew/Cellar/mongodb-community@6.0/6.0.20... (12 files, 202.4MB)
+==> Upgrading certifi
+  2025.4.26 -> 2025.10.5_1 
+==> Pouring certifi--2025.10.5_1.all.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/certifi/2025.10.5_1: 38 files, 20KB
+==> Running `brew cleanup certifi`...
+Removing: /opt/homebrew/Cellar/certifi/2025.4.26... (27 files, 27.0KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/certifi_bottle_manifest--2025.4.26... (2.2KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/certifi--2025.4.26... (5.2KB)
+==> Upgrading p11-kit
+  0.25.5 -> 0.25.10 
+==> Pouring p11-kit--0.25.10.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/p11-kit/0.25.10: 33 files, 4.3MB
+==> Running `brew cleanup p11-kit`...
+Removing: /opt/homebrew/Cellar/p11-kit/0.25.5... (31 files, 4.2MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/p11-kit_bottle_manifest--0.25.5-2... (11.2KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/p11-kit--0.25.5... (874.0KB)
+==> Upgrading libmicrohttpd
+  1.0.1 -> 1.0.2 
+==> Pouring libmicrohttpd--1.0.2.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libmicrohttpd/1.0.2: 26 files, 1.5MB
+==> Running `brew cleanup libmicrohttpd`...
+Removing: /opt/homebrew/Cellar/libmicrohttpd/1.0.1... (26 files, 1.5MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/libmicrohttpd_bottle_manifest--1.0.1... (24.0KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/libmicrohttpd--1.0.1... (470.6KB)
+==> Upgrading qemu
+  10.1.0 -> 10.1.1 
+==> Pouring qemu--10.1.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/qemu/10.1.1: 170 files, 679.7MB
+==> Running `brew cleanup qemu`...
+Removing: /opt/homebrew/Cellar/qemu/10.1.0... (170 files, 679.7MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/qemu_bottle_manifest--10.1.0... (75.8KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/qemu--10.1.0... (103.6MB)
+==> Upgrading mysql
+  9.3.0 -> 9.4.0_3 
+==> Pouring mysql--9.4.0_3.arm64_sequoia.bottle.tar.gz
+==> Caveats
+Upgrading from MySQL <8.4 to MySQL >9.0 requires running MySQL 8.4 first:
+ - brew services stop mysql
+ - brew install mysql@8.4
+ - brew services start mysql@8.4
+ - brew services stop mysql@8.4
+ - brew services start mysql
+
+We've installed your MySQL database without a root password. To secure it run:
+    mysql_secure_installation
+
+MySQL is configured to only allow connections from localhost by default
+
+To connect run:
+    mysql -u root
+
+To restart mysql after an upgrade:
+  brew services restart mysql
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/mysql/bin/mysqld_safe --datadir\=/opt/homebrew/var/mysql
+==> Summary
+🍺  /opt/homebrew/Cellar/mysql/9.4.0_3: 336 files, 293.5MB
+==> Running `brew cleanup mysql`...
+Removing: /opt/homebrew/Cellar/mysql/9.3.0... (333 files, 291.9MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/mysql_bottle_manifest--9.3.0... (31.1KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/mysql--9.3.0... (76.2MB)
+==> Upgrading conan
+  2.17.0 -> 2.21.0 
+==> Pouring conan--2.21.0.arm64_sequoia.bottle.1.tar.gz
+🍺  /opt/homebrew/Cellar/conan/2.21.0: 615 files, 5MB
+==> Running `brew cleanup conan`...
+Removing: /opt/homebrew/Cellar/conan/2.17.0... (602 files, 4.9MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/conan_bottle_manifest--2.17.0... (20.9KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/conan--2.17.0... (1.3MB)
+==> Upgrading rav1e
+  0.8.0 -> 0.8.1 
+==> Pouring rav1e--0.8.1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/rav1e/0.8.1: 15 files, 48.7MB
+==> Running `brew cleanup rav1e`...
+Removing: /opt/homebrew/Cellar/rav1e/0.8.0... (15 files, 48.4MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/rav1e_bottle_manifest--0.8.0... (8.5KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/rav1e--0.8.0... (12.5MB)
+==> Upgrading leptonica
+  1.85.0 -> 1.86.0 
+==> Pouring leptonica--1.86.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/leptonica/1.86.0: 55 files, 6.9MB
+==> Running `brew cleanup leptonica`...
+Removing: /opt/homebrew/Cellar/leptonica/1.85.0... (57 files, 7.0MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/leptonica_bottle_manifest--1.85.0... (18.2KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/leptonica--1.85.0... (2.6MB)
+==> Upgrading x264
+  r3108 -> r3222 
+==> Pouring x264--r3222.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/x264/r3222: 12 files, 4.2MB
+==> Running `brew cleanup x264`...
+Removing: /opt/homebrew/Cellar/x264/r3108... (12 files, 4.2MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/x264_bottle_manifest--r3108... (9.6KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/x264--r3108... (1.9MB)
+==> Upgrading python@3.10
+  3.10.18_1 -> 3.10.19 
+==> Pouring python@3.10--3.10.19.arm64_sequoia.bottle.tar.gz
+==> /opt/homebrew/Cellar/python@3.10/3.10.19/bin/python3.10 -Im ensurepip
+==> /opt/homebrew/Cellar/python@3.10/3.10.19/bin/python3.10 -Im pip install -v -
+==> Caveats
+Python is installed as
+  /opt/homebrew/bin/python3.10
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.10`, `python3.10-config`, `pip3.10` etc., respectively, are installed into
+  /opt/homebrew/opt/python@3.10/libexec/bin
+
+You can install Python packages with
+  pip3.10 install <package>
+They will install into the site-package directory
+  /opt/homebrew/lib/python3.10/site-packages
+
+`idle3.10` requires tkinter, which is available separately:
+  brew install python-tk@3.10
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /opt/homebrew/Cellar/python@3.10/3.10.19: 3,081 files, 56.7MB
+==> Running `brew cleanup python@3.10`...
+Removing: /opt/homebrew/Cellar/python@3.10/3.10.18_1... (3,091 files, 56.8MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/python@3.10_bottle_manifest--3.10.18_1... (21KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/python@3.10--3.10.18_1... (14.3MB)
+==> Upgrading theora
+  1.1.1 -> 1.2.0 
+==> Pouring theora--1.2.0.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/theora/1.2.0: 126 files, 2.5MB
+==> Running `brew cleanup theora`...
+Removing: /opt/homebrew/Cellar/theora/1.1.1... (98 files, 2MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/theora_bottle_manifest--1.1.1-4... (15.4KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/theora--1.1.1... (681.8KB)
+==> Upgrading sdl2
+  2.32.8 -> 2.32.10 
+==> Pouring sdl2--2.32.10.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/sdl2/2.32.10: 94 files, 6.4MB
+==> Running `brew cleanup sdl2`...
+Removing: /opt/homebrew/Cellar/sdl2/2.32.8... (94 files, 6.4MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/sdl2_bottle_manifest--2.32.8... (21.4KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/sdl2--2.32.8... (1.8MB)
+==> Upgrading bind
+  9.20.9 -> 9.20.13 
+==> Pouring bind--9.20.13.arm64_sequoia.bottle.tar.gz
+==> Caveats
+To start bind now and restart at startup:
+  sudo brew services start bind
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/bind/sbin/named -f -L /opt/homebrew/var/log/named/named.log
+==> Summary
+🍺  /opt/homebrew/Cellar/bind/9.20.13: 317 files, 8.4MB
+==> Running `brew cleanup bind`...
+Removing: /opt/homebrew/Cellar/bind/9.20.9... (316 files, 8.4MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/bind_bottle_manifest--9.20.9... (23.7KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/bind--9.20.9... (2.2MB)
+==> Upgrading python@3.11
+  3.11.13 -> 3.11.14 
+==> Pouring python@3.11--3.11.14.arm64_sequoia.bottle.tar.gz
+==> /opt/homebrew/Cellar/python@3.11/3.11.14/bin/python3.11 -Im ensurepip
+==> /opt/homebrew/Cellar/python@3.11/3.11.14/bin/python3.11 -Im pip install -v -
+==> Caveats
+Python is installed as
+  /opt/homebrew/bin/python3.11
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.11`, `python3.11-config`, `pip3.11` etc., respectively, are installed into
+  /opt/homebrew/opt/python@3.11/libexec/bin
+
+You can install Python packages with
+  pip3.11 install <package>
+They will install into the site-package directory
+  /opt/homebrew/lib/python3.11/site-packages
+
+`idle3.11` requires tkinter, which is available separately:
+  brew install python-tk@3.11
+
+gdbm (`dbm.gnu`) is no longer included in this formula, but it is available separately:
+  brew install python-gdbm@3.11
+`dbm.ndbm` changed database backends in Homebrew Python 3.11.
+If you need to read a database from a previous Homebrew Python created via `dbm.ndbm`,
+you'll need to read your database using the older version of Homebrew Python and convert to another format.
+`dbm` still defaults to `dbm.gnu` when it is installed.
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+For more information about Homebrew and Python, see: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /opt/homebrew/Cellar/python@3.11/3.11.14: 3,306 files, 62MB
+==> Running `brew cleanup python@3.11`...
+Removing: /opt/homebrew/Cellar/python@3.11/3.11.13... (3,409 files, 64.4MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/python@3.11_bottle_manifest--3.11.13... (26.4KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/python@3.11--3.11.13... (15MB)
+==> Upgrading cjson
+  1.7.18 -> 1.7.19 
+==> Pouring cjson--1.7.19.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/cjson/1.7.19: 24 files, 258.1KB
+==> Running `brew cleanup cjson`...
+Removing: /opt/homebrew/Cellar/cjson/1.7.18... (24 files, 257.3KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/cjson_bottle_manifest--1.7.18... (11.6KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/cjson--1.7.18... (56.9KB)
+==> Upgrading pyenv
+  2.6.8 -> 2.6.11 
+==> Pouring pyenv--2.6.11.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pyenv/2.6.11: 1,386 files, 4.3MB
+==> Running `brew cleanup pyenv`...
+Removing: /opt/homebrew/Cellar/pyenv/2.6.8... (1,376 files, 4.3MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/pyenv_bottle_manifest--2.6.8... (15.5KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/pyenv--2.6.8... (1.3MB)
+==> Upgrading ffmpeg
+  7.1.1_3 -> 8.0_1 
+==> Pouring ffmpeg--8.0_1.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/ffmpeg/8.0_1: 285 files, 52.9MB
+==> Running `brew cleanup ffmpeg`...
+Removing: /opt/homebrew/Cellar/ffmpeg/7.1.1_3... (287 files, 52.1MB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/ffmpeg_bottle_manifest--7.1.1_3... (112.5KB)
+Removing: /Users/tayyisa/Library/Caches/Homebrew/ffmpeg--7.1.1_3... (20.2MB)
+Warning: The following dependents of upgraded formulae are outdated but will not
+be upgraded because they are not bottled:
+  mongodb-community
+  mongodb-community@6.0
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+Emacs Lisp files have been installed to:
+  /opt/homebrew/share/emacs/site-lisp/cmake
+==> mongodb-community
+To restart mongodb/brew/mongodb-community after an upgrade:
+  brew services restart mongodb/brew/mongodb-community
+==> cmake
+To install the CMake documentation, run:
+  brew install cmake-docs
+==> mongodb-community@6.0
+To start mongodb/brew/mongodb-community@6.0 now and restart at login:
+  brew services start mongodb/brew/mongodb-community@6.0
+==> mysql
+Upgrading from MySQL <8.4 to MySQL >9.0 requires running MySQL 8.4 first:
+ - brew services stop mysql
+ - brew install mysql@8.4
+ - brew services start mysql@8.4
+ - brew services stop mysql@8.4
+ - brew services start mysql
+
+We've installed your MySQL database without a root password. To secure it run:
+    mysql_secure_installation
+
+MySQL is configured to only allow connections from localhost by default
+
+To connect run:
+    mysql -u root
+
+To restart mysql after an upgrade:
+  brew services restart mysql
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/mysql/bin/mysqld_safe --datadir\=/opt/homebrew/var/mysql
+==> python@3.10
+Python is installed as
+  /opt/homebrew/bin/python3.10
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.10`, `python3.10-config`, `pip3.10` etc., respectively, are installed into
+  /opt/homebrew/opt/python@3.10/libexec/bin
+
+You can install Python packages with
+  pip3.10 install <package>
+They will install into the site-package directory
+  /opt/homebrew/lib/python3.10/site-packages
+
+`idle3.10` requires tkinter, which is available separately:
+  brew install python-tk@3.10
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> bind
+To start bind now and restart at startup:
+  sudo brew services start bind
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/bind/sbin/named -f -L /opt/homebrew/var/log/named/named.log
+==> python@3.11
+Python is installed as
+  /opt/homebrew/bin/python3.11
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.11`, `python3.11-config`, `pip3.11` etc., respectively, are installed into
+  /opt/homebrew/opt/python@3.11/libexec/bin
+
+You can install Python packages with
+  pip3.11 install <package>
+They will install into the site-package directory
+  /opt/homebrew/lib/python3.11/site-packages
+
+`idle3.11` requires tkinter, which is available separately:
+  brew install python-tk@3.11
+
+gdbm (`dbm.gnu`) is no longer included in this formula, but it is available separately:
+  brew install python-gdbm@3.11
+`dbm.ndbm` changed database backends in Homebrew Python 3.11.
+If you need to read a database from a previous Homebrew Python created via `dbm.ndbm`,
+you'll need to read your database using the older version of Homebrew Python and convert to another format.
+`dbm` still defaults to `dbm.gnu` when it is installed.
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+For more information about Homebrew and Python, see: https://docs.brew.sh/Homebrew-and-Python
+tayyisa@MacBook-Air-asiyat Lab9 % brew search nginx
+==> Formulae
+nginx
+tayyisa@MacBook-Air-asiyat Lab9 % brew install nginx
+
+==> Fetching downloads for: nginx
+==> Downloading https://ghcr.io/v2/homebrew/core/nginx/manifests/1.29.2
+######################################################################### 100.0%
+==> Fetching nginx
+==> Downloading https://ghcr.io/v2/homebrew/core/nginx/blobs/sha256:13ab2327cfe3
+######################################################################### 100.0%
+==> Pouring nginx--1.29.2.arm64_sequoia.bottle.tar.gz
+==> Caveats
+Docroot is: /opt/homebrew/var/www
+
+The default port has been set in /opt/homebrew/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+
+nginx will load all files in /opt/homebrew/etc/nginx/servers/.
+
+To start nginx now and restart at login:
+  brew services start nginx
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/nginx/bin/nginx -g daemon\ off\;
+==> Summary
+🍺  /opt/homebrew/Cellar/nginx/1.29.2: 27 files, 2.5MB
+==> Running `brew cleanup nginx`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+tayyisa@MacBook-Air-asiyat Lab9 % brew deps nginx
+
+ca-certificates
+openssl@3
+pcre2
+tayyisa@MacBook-Air-asiyat Lab9 % brew services start nginx
+
+==> Successfully started `nginx` (label: homebrew.mxcl.nginx)
+tayyisa@MacBook-Air-asiyat Lab9 % brew services list
+
+Name                  Status  User    File
+bind                  none            
+mongodb-community     started tayyisa ~/Library/LaunchAgents/homebrew.mxcl.mongodb-community.plist
+mongodb-community@6.0 none            
+mysql                 started tayyisa ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+nginx                 started tayyisa ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+unbound               none            
