@@ -1,0 +1,28 @@
+
+tayyisa@MacBook-Air-asiyat InfoSec % mkdir Lab11
+tayyisa@MacBook-Air-asiyat InfoSec % cd Lab11
+tayyisa@MacBook-Air-asiyat Lab11 % 
+tayyisa@MacBook-Air-asiyat Lab11 % git clone https://github.com/mtoyoda/sl.git
+Cloning into 'sl'...
+remote: Enumerating objects: 97, done.
+remote: Counting objects: 100% (45/45), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 97 (delta 36), reused 34 (delta 34), pack-reused 52 (from 1
+Receiving objects: 100% (97/97), 644.48 KiB | 1.14 MiB/s, done.
+Resolving deltas: 100% (51/51), done.
+tayyisa@MacBook-Air-asiyat Lab11 % ls 
+sl
+tayyisa@MacBook-Air-asiyat Lab11 % cd sl
+tayyisa@MacBook-Air-asiyat sl % make
+gcc -O -Wall -o sl sl.c -lncurses
+
+tayyisa@MacBook-Air-asiyat sl % make PREFIX=/Users/tayyisa/auca/InfoSec/Lab11/sl-local install
+make: *** No rule to make target `install'.  Stop.
+
+tayyisa@MacBook-Air-asiyat sl % mkdir -p /Users/tayyisa/auca/InfoSec/Lab11/sl-local/bin
+tayyisa@MacBook-Air-asiyat sl % cp sl /Users/tayyisa/auca/InfoSec/Lab11/sl-local/bin/
+tayyisa@MacBook-Air-asiyat sl % ls /Users/tayyisa/auca/InfoSec/Lab11/sl-local/bin
+
+sl
+
+tayyisa@MacBook-Air-asiyat sl % ./sl
