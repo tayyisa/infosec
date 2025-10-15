@@ -1,0 +1,11 @@
+tayyisa@MacBook-Air-asiyat Lab5_Additional % nano commands_2.txt
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo touch /Users/Shared/shared.txt 
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo chown user1:developers /Users/Shared/shared.txt
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo chmod 770 /Users/Shared/shared.txt
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % ls -l /Users/Shared/shared.txt
+
+-rwxrwx---  1 user1  developers  0 Oct 15 23:34 /Users/Shared/shared.txt
+tayyisa@MacBook-Air-asiyat Lab5_Additional % nano commands_3.txt

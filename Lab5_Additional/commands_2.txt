@@ -1,0 +1,17 @@
+tayyisa@MacBook-Air-asiyat Lab5_Additional % nano commands_1.txt
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Groups/developers
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Groups/developers PrimaryGroupID 550
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -append /Groups/developers GroupMembership user1
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % dscl . read /Groups/developers
+
+dsAttrTypeNative:record_daemon_version: 9054000
+AppleMetaNodeLocation: /Local/Default
+GeneratedUID: 718A3D2F-FCE5-47FD-A6D3-F3068EC88656
+GroupMembership: user1
+PrimaryGroupID: 550
+RecordName: developers
+RecordType: dsRecTypeStandard:Groups
+tayyisa@MacBook-Air-asiyat Lab5_Additional % 

@@ -1,0 +1,27 @@
+tayyisa@MacBook-Air-asiyat Lab5_Additional % nano commands_3.txt
+tayyisa@MacBook-Air-asiyat Lab5_Additional % 
+tayyisa@MacBook-Air-asiyat Lab5_Additional % 
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo su - user1
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+MacBook-Air-asiyat:~ user1$ whoami
+user1
+MacBook-Air-asiyat:~ user1$ echo "Hello from user1" > /Users/Shared/shared.txt
+MacBook-Air-asiyat:~ user1$ 
+MacBook-Air-asiyat:~ user1$ exit
+logout
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo su - user2
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+MacBook-Air-asiyat:~ user2$ whoami
+user2
+MacBook-Air-asiyat:~ user2$ 
+MacBook-Air-asiyat:~ user2$ cat /Users/Shared/shared.txt 
+cat: /Users/Shared/shared.txt: Permission denied
+MacBook-Air-asiyat:~ user2$ exit
+logout
+tayyisa@MacBook-Air-asiyat Lab5_Additional % nano commands_4.txt

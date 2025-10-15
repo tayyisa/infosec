@@ -1,0 +1,236 @@
+tayyisa@MacBook-Air-asiyat InfoSec % mkdir Lab5_Additional
+tayyisa@MacBook-Air-asiyat InfoSec % cd Lab5_Additional 
+tayyisa@MacBook-Air-asiyat Lab5_Additional % ls
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user1
+
+Password:
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user1 UserShell /bin/bash
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user1 RealName "User One"
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user1 UniqueID 510
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user1 PrimaryGroupID 20
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user1 NFSHomeDirectory /Users/user1
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -passwd /Users/user1 12345
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo createhomedir -c -u user1 > /dev/null
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user2
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user2 UserShell /bin/bash
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user2 RealName "User Two"
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user2 UniqueID 511
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user2 PrimaryGroupID 20
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -create /Users/user2 NFSHomeDirectory /Users/user2
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo dscl . -passwd /Users/user2 12345
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % sudo createhomedir -c -u user2 > /dev/null
+
+tayyisa@MacBook-Air-asiyat Lab5_Additional % dscl . list /Users
+
+_accessoryupdater
+_amavisd
+_analyticsd
+_aonsensed
+_appinstalld
+_appleevents
+_applepay
+_appowner
+_appserver
+_appstore
+_ard
+_assetcache
+_astris
+_atsserver
+_audiomxd
+_avbdeviced
+_avphidbridge
+_backgroundassets
+_BGMXPCHelper
+_biome
+_calendar
+_captiveagent
+_ces
+_clamav
+_cmiodalassistants
+_coreaudiod
+_coremediaiod
+_coreml
+_corespeechd
+_ctkd
+_cvmsroot
+_cvs
+_cyrus
+_darwindaemon
+_datadetectors
+_demod
+_devdocs
+_devicemgr
+_diagnosticservicesd
+_diskimagesiod
+_displaypolicyd
+_distnote
+_dovecot
+_dovenull
+_dpaudio
+_driverkit
+_eligibilityd
+_eppc
+_findmydevice
+_fpsd
+_ftp
+_gamecontrollerd
+_geod
+_hidd
+_iconservices
+_installassistant
+_installcoordinationd
+_installer
+_jabber
+_kadmin_admin
+_kadmin_changepw
+_knowledgegraphd
+_krb_anonymous
+_krb_changepw
+_krb_kadmin
+_krb_kerberos
+_krb_krbtgt
+_krbfast
+_krbtgt
+_launchservicesd
+_lda
+_locationd
+_logd
+_lp
+_mailman
+_mbsetupuser
+_mcxalr
+_mdatp
+_mdnsresponder
+_mmaintenanced
+_mobileasset
+_mobilegestalthelper
+_modelmanagerd
+_mysql
+_naturallanguaged
+_nearbyd
+_netbios
+_netstatistics
+_networkd
+_neuralengine
+_notification_proxy
+_nsurlsessiond
+_oahd
+_ondemand
+_postfix
+_postgres
+_qtss
+_reportmemoryexception
+_reportsystemmemory
+_rmd
+_sandbox
+_screensaver
+_scsd
+_securityagent
+_sntpd
+_softwareupdate
+_spotlight
+_sshd
+_svn
+_swtransparencyd
+_systemstatusd
+_taskgated
+_teamsserver
+_terminusd
+_timed
+_timezone
+_tokend
+_trustd
+_trustevaluationagent
+_unknown
+_update_sharing
+_usbmuxd
+_uucp
+_warmd
+_webauthserver
+_windowserver
+_www
+_wwwproxy
+_xserverdocs
+daemon
+nobody
+root
+tayyisa
+user1
+user2
+tayyisa@MacBook-Air-asiyat Lab5_Additional % dscl . read /Users/user1
+
+dsAttrTypeNative:_writers_passwd: user1
+dsAttrTypeNative:accountPolicyData:
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>creationTime</key>
+	<real>1760549502.062465</real>
+	<key>failedLoginCount</key>
+	<integer>0</integer>
+	<key>failedLoginTimestamp</key>
+	<integer>0</integer>
+	<key>passwordLastSetTime</key>
+	<real>1760549530.111161</real>
+</dict>
+</plist>
+
+dsAttrTypeNative:record_daemon_version: 9054000
+AppleMetaNodeLocation: /Local/Default
+GeneratedUID: 461EA322-D608-4724-86AB-2C7F5C01AD59
+NFSHomeDirectory: /Users/user1
+Password: ********
+PrimaryGroupID: 20
+RealName:
+ User One
+RecordName: user1
+RecordType: dsRecTypeStandard:Users
+UniqueID: 510
+UserShell: /bin/bash
+tayyisa@MacBook-Air-asiyat Lab5_Additional % dscl . read /Users/user2
+
+dsAttrTypeNative:_writers_passwd: user2
+dsAttrTypeNative:accountPolicyData:
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>creationTime</key>
+	<real>1760549540.2882051</real>
+	<key>failedLoginCount</key>
+	<integer>0</integer>
+	<key>failedLoginTimestamp</key>
+	<integer>0</integer>
+	<key>passwordLastSetTime</key>
+	<real>1760549562.0706959</real>
+</dict>
+</plist>
+
+dsAttrTypeNative:record_daemon_version: 9054000
+AppleMetaNodeLocation: /Local/Default
+GeneratedUID: E62CCA3B-BD0E-4E09-AF86-59F5FE50009C
+NFSHomeDirectory: /Users/user2
+Password: ********
+PrimaryGroupID: 20
+RealName:
+ User Two
+RecordName: user2
+RecordType: dsRecTypeStandard:Users
+UniqueID: 511
+UserShell: /bin/bash
+tayyisa@MacBook-Air-asiyat Lab5_Additional % 
