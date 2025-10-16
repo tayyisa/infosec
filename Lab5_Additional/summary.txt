@@ -1,0 +1,36 @@
+Summary Lab5
+
+I made two users with dscl:
+
+sudo dscl . -create /Users/user1
+sudo dscl . -create /Users/user1 UserShell /bin/bash
+sudo dscl . -create /Users/user1 RealName "User One"
+sudo dscl . -create /Users/user1 UniqueID 510
+sudo dscl . -create /Users/user1 PrimaryGroupID 20
+sudo dscl . -create /Users/user1 NFSHomeDirectory /Users/user1
+sudo dscl . -passwd /Users/user1 12345
+sudo createhomedir -c -u user1
+
+The same commands were used for user2 with UniqueID 511. I checked both accounts with dscl . list /Users and dscl . read /Users/user1, which confirmed that users were added correctly.
+I created a group called developers and added user1 to it:
+
+sudo dscl . -create /Groups/developers
+sudo dscl . -create /Groups/developers PrimaryGroupID 550
+sudo dscl . -append /Groups/developers GroupMembership user1
+
+Reading group info showed user1 listed in developers.
+I made a shared file and changed ownership and permissions:
+
+sudo touch /Users/Shared/shared.txt
+sudo chown user1:developers /Users/Shared/shared.txt
+sudo chmod 770 /Users/Shared/shared.txt
+
+The permission -rwxrwx--- meant only the owner and group could use it.
+Logged in as user1, I wrote to the file:
+
+echo "Hello from user1" > /Users/Shared/shared.txt
+
+Logged in as user2, I tried to read it but got Permission denied. 
+This confirmed that user2 couldn’t access it, since he wasn’t part of the developers group.
+Permissions clearly controlled who could collaborate and who was isolated. Group members could share and edit files, while others were blocked. This lab showed how user accounts, groups, and permissions work together to manage security in Linux and macOS.
+
