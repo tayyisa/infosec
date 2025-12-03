@@ -1,6 +1,5 @@
 ## Steganography in Linux — Final Project  
 
-
 <img width="1918" height="1032" alt="Screenshot 2025-12-03 at 21 47 40" src="https://github.com/user-attachments/assets/39591b52-06a5-4709-9315-e55c80354944" />
 
 Course: Information Security, Fall 2025  
@@ -78,15 +77,73 @@ This helps demonstrate the process visually.
 
 ---
 
-## Running the Project
+## Installation
 
-### 1. Install Python dependencies
+### Installing steghide
+
+#### Linux (Ubuntu / Debian)
+```
+sudo apt update
+sudo apt install steghide
+```
+
+#### macOS (Homebrew)
+```
+brew update
+brew install git pkg-config automake autoconf libtool gettext libjpeg zlib mhash
+
+git clone https://github.com/607011/steghide.git
+cd steghide
+
+export LDFLAGS="-L/opt/homebrew/opt/gettext/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/gettext/include"
+
+./configure
+make
+sudo make install
+```
+
+Verify installation:
+```
+steghide --version
+```
+
+#### Windows (WSL recommended)
+Install Ubuntu under WSL and run:
+```
+sudo apt update
+sudo apt install steghide
+```
+
+---
+
+### Clone this project
+
+```
+git clone https://github.com/tayyisa/infosec.git
+cd infosec/Final_Project
+```
+
+### (Optional but recommended) Create and activate a virtual environment
+
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+If you prefer, you can skip the virtual environment and install the dependencies globally.
+
+### Install Python dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-### 2. Run the web application
+---
+
+## Running the Project
+
+### Run the web application
 
 ```
 python app.py
@@ -145,65 +202,6 @@ To check if `steghide` is installed:
 
 ```
 steghide --version
-```
-
-If a version number appears, it is properly installed.
-
----
-
-## Installation
-
-### Installing steghide
-
-#### Linux (Ubuntu / Debian)
-```
-sudo apt update
-sudo apt install steghide
-```
-
-#### macOS (Homebrew)
-```
-brew update
-brew install git pkg-config automake autoconf libtool gettext libjpeg zlib mhash
-
-git clone https://github.com/607011/steghide.git
-cd steghide
-
-export LDFLAGS="-L/opt/homebrew/opt/gettext/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/gettext/include"
-
-./configure
-make
-sudo make install
-```
-
-Verify installation:
-
-```
-steghide --version
-```
-
-#### Windows (WSL recommended)
-Install Ubuntu under WSL and run:
-
-```
-sudo apt update
-sudo apt install steghide
-```
-
----
-
-### Clone this project
-
-```
-git clone https://github.com/tayyisa/infosec.git
-cd infosec/Final_Project
-```
-
-### Install Python dependencies
-
-```
-pip install -r requirements.txt
 ```
 
 ---
