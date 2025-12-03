@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Steganography in Linux — Information Security Final Project Fall 2025</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light nav-bg">
+  <div class="container-fluid px-5">
+    <a class="navbar-brand fw-semibold" href="/">Steganography in Linux</a>
+  </div>
+</nav>
+
+<main class="container-fluid py-5 px-5">
+  <div class="row justify-content-center">
+    <div class="col-12">
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+      <div class="mb-3">
+        {% for category, message in messages %}
+        <div class="alert alert-{{ 'danger' if category=='danger' else ('warning' if category=='warning' else 'success') }}" role="alert">
+          {{ message }}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% endwith %}
+
+      <div class="card shadow-sm mx-auto wide-card">
+        <div class="card-body p-4">
+          <h1 class="h4 mb-2">Steganography in Linux</h1>
+          <p class="text-muted mb-4">Tool for embedding and extracting files inside JPEG images and WAV audio using steghide.</p>
+
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="border rounded p-3 h-100">
+                <h5 class="mb-3">Embed</h5>
+                <form id="embedForm" method="post" action="/embed" enctype="multipart/form-data" onsubmit="submitForm(event, 'embedBtn')">
+                  <div class="mb-2">
+                    <label class="form-label small">Cover (JPEG or WAV)</label>
+                    <input class="form-control" type="file" name="cover" accept=".jpg,.jpeg,.wav" required>
+                  </div>
+                  <div class="mb-2">
+                    <label class="form-label small">Secret file</label>
+                    <input class="form-control" type="file" name="secret" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label small">Passphrase</label>
+                    <input class="form-control" type="password" name="password" required>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button id="embedBtn" class="btn btn-primary flex-fill" type="submit">
+                      <span class="btn-text">Embed and download</span>
+                      <span class="spinner-border spinner-border-sm ms-2 d-none" role="status"></span>
+                    </button>
+                    <button class="btn btn-outline-secondary" type="reset">Clear</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="border rounded p-3 h-100">
+                <h5 class="mb-3">Extract</h5>
+                <form id="extractForm" method="post" action="/extract" enctype="multipart/form-data" onsubmit="submitForm(event, 'extractBtn')">
+                  <div class="mb-2">
+                    <label class="form-label small">Stego file</label>
+                    <input class="form-control" type="file" name="stego" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label small">Passphrase</label>
+                    <input class="form-control" type="password" name="password_extract" required>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button id="extractBtn" class="btn btn-success flex-fill" type="submit">
+                      <span class="btn-text">Extract and download</span>
+                      <span class="spinner-border spinner-border-sm ms-2 d-none" role="status"></span>
+                    </button>
+                    <button class="btn btn-outline-secondary" type="reset">Clear</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="py-3 footer-bg">
+  <div class="container-fluid text-center small text-muted">
+    Steganography in Linux — Information Security Final Project Fall 2025
+  </div>
+</footer>
+
+<script>
+function submitForm(e, btnId) {
+  var btn = document.getElementById(btnId);
+  var spinner = btn.querySelector('.spinner-border');
+  var txt = btn.querySelector('.btn-text');
+  spinner.classList.remove('d-none');
+  txt.textContent = 'Processing...';
+  btn.disabled = true;
+  setTimeout(function(){
+    spinner.classList.add('d-none');
+    txt.textContent = btnId === 'embedBtn' ? 'Embed and download' : 'Extract and download';
+    btn.disabled = false;
+  }, 5000);
+}
+</script>
+
+</body>
+</html>
+

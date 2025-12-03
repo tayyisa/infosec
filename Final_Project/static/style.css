@@ -1,0 +1,63 @@
+:root{
+  --bg: #fff6fb;
+  --card-bg: #ffffff;
+  --accent: #f6a6c1;
+  --accent-600: #f08fb5;
+  --accent-200: #fde7ef;
+  --accent-300: #fbd6e9;
+  --muted: #6b6b6b;
+}
+html,body{height:100%;}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg),#fff);
+  color:#111827;
+}
+.nav-bg{
+  background:linear-gradient(90deg,#fff 0%, #fff6fb 100%);
+  border-bottom:1px solid rgba(16,24,40,0.04);
+}
+.footer-bg{
+  background:transparent;
+  border-top:1px solid rgba(16,24,40,0.04);
+}
+.wide-card{
+  max-width:1200px;
+  margin:0 auto;
+  background:var(--card-bg);
+  border-radius:12px;
+}
+.card-body{padding:28px;}
+h1,h5{color:#111827;}
+.btn-primary{
+  background:var(--accent);
+  border-color:var(--accent-600);
+  color:#fff;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.02);
+}
+.btn-primary:hover{
+  background:var(--accent-600);
+  border-color:var(--accent-600);
+}
+.btn-success{
+  background:var(--accent-300);
+  border-color:var(--accent-300);
+  color:#5b2b3a;
+  box-shadow: none;
+}
+.btn-success:hover{
+  background:var(--accent-200);
+  border-color:var(--accent-200);
+  color:#5b2b3a;
+}
+.btn-outline-secondary{
+  border-color:rgba(16,24,40,0.06);
+  color:var(--muted);
+}
+.border{border-color:rgba(16,24,40,0.04)!important;}
+input[type="file"]{height:calc(2.25rem + 2px);}
+.alert{border-radius:8px;}
+@media (min-width:1400px){
+  .wide-card{max-width:1400px;}
+}
