@@ -1,0 +1,60 @@
+tayyisa@MacBook-Air-asiyat InfoSec % mkdir Lab13
+tayyisa@MacBook-Air-asiyat InfoSec % cd Lab13
+tayyisa@MacBook-Air-asiyat Lab13 % python3 -m venv venv
+
+tayyisa@MacBook-Air-asiyat Lab13 % source venv/bin/activate
+
+(venv) tayyisa@MacBook-Air-asiyat Lab13 % pip install pynput
+
+Collecting pynput
+  Downloading pynput-1.8.1-py2.py3-none-any.whl.metadata (32 kB)
+Collecting six (from pynput)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting pyobjc-framework-ApplicationServices>=8.0 (from pynput)
+  Downloading pyobjc_framework_applicationservices-12.1-cp314-cp314-macosx_10_15_universal2.whl.metadata (2.8 kB)
+Collecting pyobjc-framework-Quartz>=8.0 (from pynput)
+  Downloading pyobjc_framework_quartz-12.1-cp314-cp314-macosx_10_15_universal2.whl.metadata (3.6 kB)
+Collecting pyobjc-core>=12.1 (from pyobjc-framework-ApplicationServices>=8.0->pynput)
+  Downloading pyobjc_core-12.1-cp314-cp314-macosx_10_15_universal2.whl.metadata (2.8 kB)
+Collecting pyobjc-framework-Cocoa>=12.1 (from pyobjc-framework-ApplicationServices>=8.0->pynput)
+  Downloading pyobjc_framework_cocoa-12.1-cp314-cp314-macosx_10_15_universal2.whl.metadata (2.6 kB)
+Collecting pyobjc-framework-CoreText>=12.1 (from pyobjc-framework-ApplicationServices>=8.0->pynput)
+  Downloading pyobjc_framework_coretext-12.1-cp314-cp314-macosx_10_15_universal2.whl.metadata (2.7 kB)
+Downloading pynput-1.8.1-py2.py3-none-any.whl (91 kB)
+Downloading pyobjc_framework_applicationservices-12.1-cp314-cp314-macosx_10_15_universal2.whl (32 kB)
+Downloading pyobjc_core-12.1-cp314-cp314-macosx_10_15_universal2.whl (670 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 670.2/670.2 kB 4.3 MB/s  0:00:00
+Downloading pyobjc_framework_cocoa-12.1-cp314-cp314-macosx_10_15_universal2.whl (384 kB)
+Downloading pyobjc_framework_coretext-12.1-cp314-cp314-macosx_10_15_universal2.whl (30 kB)
+Downloading pyobjc_framework_quartz-12.1-cp314-cp314-macosx_10_15_universal2.whl (219 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, pyobjc-core, pyobjc-framework-Cocoa, pyobjc-framework-Quartz, pyobjc-framework-CoreText, pyobjc-framework-ApplicationServices, pynput
+Successfully installed pynput-1.8.1 pyobjc-core-12.1 pyobjc-framework-ApplicationServices-12.1 pyobjc-framework-Cocoa-12.1 pyobjc-framework-CoreText-12.1 pyobjc-framework-Quartz-12.1 six-1.17.0
+
+[notice] A new release of pip is available: 25.2 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+(venv) tayyisa@MacBook-Air-asiyat Lab13 % nano main.py 
+
+(venv) tayyisa@MacBook-Air-asiyat Lab13 % python main.py
+This process is not trusted! Input event monitoring will not be possible until it is added to accessibility clients.
+Start key logging...
+Key Pressed:  'h'
+hKey Pressed:  'e'
+eKey Pressed:  'l'
+lKey Pressed:  'l'
+lKey Pressed:  'o'
+oKey Pressed:  Key.enter
+
+Key Pressed:  'g'
+gKey Pressed:  'o'
+oKey Pressed:  'o'
+oKey Pressed:  'd'
+dKey Pressed:  'b'
+bKey Pressed:  'y'
+yKey Pressed:  'e'
+eKey Pressed:  Key.enter
+
+Key Pressed:  'l'
+Key Pressed:  's'
+Key Pressed:  Key.enter
+
