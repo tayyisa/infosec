@@ -222,7 +222,7 @@ The structure, clarity, and organization are intended to match academic project 
 
 ## Video Demonstration
 
-Link to video:
+Link to video: https://drive.google.com/file/d/1ATPsCnYLnHbtiReku6HB5xTQ1cwCd-Wd/view?usp=sharing
 
 The video demonstration shows:
 
